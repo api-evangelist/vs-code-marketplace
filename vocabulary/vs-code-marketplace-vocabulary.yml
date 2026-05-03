@@ -1,0 +1,103 @@
+vocabulary:
+  name: VS Code Marketplace Vocabulary
+  description: >-
+    Key terms, concepts, and taxonomy for the Visual Studio Code Marketplace
+    and its Gallery API for extension discovery, distribution, and management.
+  version: '1.0'
+  created: '2026-05-03'
+  modified: '2026-05-03'
+  tags:
+    - Developer Tools
+    - Extensions
+    - IDE
+    - Marketplace
+    - Microsoft
+
+  domains:
+    - name: Extensions
+      description: VS Code extension concepts
+      terms:
+        - term: Extension
+          definition: A package that adds features to Visual Studio Code, such as language support, debuggers, themes, or tools.
+        - term: VSIX
+          definition: Visual Studio Extension package format. A ZIP archive containing the extension's manifest, code, assets, and metadata.
+        - term: Extension ID
+          definition: Unique identifier for an extension in publisher.name format (e.g., ms-python.python).
+        - term: Extension Pack
+          definition: A collection of related extensions bundled and installed together.
+        - term: Publisher
+          definition: An entity (individual or organization) that publishes extensions to the Marketplace.
+        - term: Publisher Name
+          definition: Unique, lowercase identifier for a publisher used in extension IDs and API calls (e.g., ms-python).
+        - term: Verified Publisher
+          definition: A publisher whose domain has been verified by Microsoft in the Marketplace.
+        - term: Pre-release Extension
+          definition: Extension version published as a preview/beta before stable release.
+        - term: Built-in Extension
+          definition: Extensions shipped with VS Code itself (e.g., language basics, Git).
+        - term: Activation Event
+          definition: A trigger that causes an extension to activate (e.g., opening a specific file type).
+
+    - name: Gallery API
+      description: VS Code Marketplace Gallery API concepts
+      terms:
+        - term: Gallery API
+          definition: The REST API at marketplace.visualstudio.com/_apis/public/gallery for programmatic extension discovery and download.
+        - term: ExtensionQuery
+          definition: The primary Gallery API endpoint (POST /extensionquery) for searching and filtering extensions.
+        - term: FilterType
+          definition: Integer code specifying the type of filter criteria. Key values - 1=Tag, 4=ExtensionId, 5=Category, 7=ExtensionName, 8=Target, 10=FullText.
+        - term: QueryFlags
+          definition: Bitmask integer controlling the level of detail returned in extension query responses. 16863 returns all attributes.
+        - term: Asset Type
+          definition: Named resource type within an extension version (e.g., Microsoft.VisualStudio.Services.VSIXPackage for the installable package).
+        - term: Statistics
+          definition: Metrics associated with an extension including install count, average rating, rating count, and trending scores.
+        - term: InstallCount
+          definition: Total number of times an extension has been installed from the Marketplace.
+        - term: TrendingScore
+          definition: A score measuring an extension's recent download momentum (daily, weekly, monthly).
+        - term: SortBy
+          definition: Query sort field. 0=Default, 4=Downloads, 5=Rating, 6=PublishedDate, 12=InstallCount.
+        - term: Paging Token
+          definition: Cursor token returned in queries for navigating large result sets.
+
+    - name: Extension Development
+      description: Developer concepts for building and publishing VS Code extensions
+      terms:
+        - term: vsce
+          definition: Visual Studio Code Extension manager. CLI tool for packaging, publishing, and managing VS Code extensions.
+        - term: package.json
+          definition: Extension manifest file declaring extension name, publisher, activation events, contribution points, and dependencies.
+        - term: Contribution Points
+          definition: Extension manifest declarations that describe what the extension contributes to VS Code (commands, settings, themes, languages, etc.).
+        - term: Language Server Protocol
+          definition: JSON-RPC protocol between editors and language servers enabling language features like IntelliSense, go-to-definition, and diagnostics.
+        - term: DAP
+          definition: Debug Adapter Protocol. Standardized protocol enabling VS Code to communicate with debuggers.
+        - term: Webview
+          definition: API allowing extensions to render HTML content inside VS Code panels.
+        - term: Extension Host
+          definition: A separate Node.js process that runs extension code, isolated from the VS Code UI process.
+        - term: Workspace Trust
+          definition: Security model that restricts extension capabilities when opening untrusted workspaces.
+
+    - name: Categories
+      description: Extension categories used in the Marketplace
+      terms:
+        - term: Programming Languages
+          definition: Extensions adding language support, syntax highlighting, snippets, or IntelliSense for programming languages.
+        - term: Debuggers
+          definition: Extensions providing debugging capabilities for specific languages or runtimes.
+        - term: Linters
+          definition: Extensions that analyze code for errors, style issues, and potential bugs.
+        - term: Themes
+          definition: Extensions changing the visual appearance of the VS Code editor (color themes, icon themes).
+        - term: Snippets
+          definition: Extensions providing code snippet libraries for faster coding.
+        - term: Keymaps
+          definition: Extensions mapping keyboard shortcuts from other editors (Vim, Emacs, Sublime Text) to VS Code.
+        - term: Formatters
+          definition: Extensions providing code formatting for specific languages.
+        - term: SCM Providers
+          definition: Source control management extensions beyond the built-in Git integration.

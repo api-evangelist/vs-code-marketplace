@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/vs-code-marketplace/json-schema/vs-code-marketplace-extension-schema.json",
+  "title": "VS Code Marketplace Extension",
+  "description": "Schema for a Visual Studio Code Marketplace extension as returned by the Gallery API.",
+  "type": "object",
+  "properties": {
+    "extensionId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the extension."
+    },
+    "extensionName": {
+      "type": "string",
+      "description": "The extension's short name (e.g., python)."
+    },
+    "displayName": {
+      "type": "string",
+      "description": "Human-readable display name of the extension."
+    },
+    "shortDescription": {
+      "type": "string",
+      "description": "Brief description of the extension's purpose."
+    },
+    "publisher": {
+      "type": "object",
+      "description": "The publisher of the extension.",
+      "properties": {
+        "publisherId": {"type": "string", "format": "uuid"},
+        "publisherName": {"type": "string", "description": "Publisher's unique name (e.g., ms-python)."},
+        "displayName": {"type": "string"},
+        "isDomainVerified": {"type": "boolean"}
+      }
+    },
+    "versions": {
+      "type": "array",
+      "description": "Available versions of the extension.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "version": {"type": "string", "description": "Semantic version string."},
+          "lastUpdated": {"type": "string", "format": "date-time"},
+          "assetUri": {"type": "string", "format": "uri"},
+          "fallbackAssetUri": {"type": "string", "format": "uri"},
+          "files": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "assetType": {"type": "string"},
+                "source": {"type": "string", "format": "uri"}
+              }
+            }
+          },
+          "properties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "key": {"type": "string"},
+                "value": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "description": "Extension categories.",
+      "items": {"type": "string"}
+    },
+    "tags": {
+      "type": "array",
+      "description": "Extension tags for discoverability.",
+      "items": {"type": "string"}
+    },
+    "statistics": {
+      "type": "array",
+      "description": "Usage statistics including install count and ratings.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "statisticName": {
+            "type": "string",
+            "description": "Type of statistic (install, averagerating, ratingcount, trendingdaily, etc.)."
+          },
+          "value": {"type": "number"}
+        }
+      }
+    },
+    "publishedDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the extension was first published."
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the extension was last updated."
+    },
+    "averageRating": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "Average user rating from 0 to 5."
+    },
+    "ratingCount": {
+      "type": "integer",
+      "description": "Number of user ratings submitted."
+    },
+    "installationTargets": {
+      "type": "array",
+      "description": "Supported installation targets (e.g., Microsoft.VisualStudio.Code).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "target": {"type": "string"},
+          "targetVersion": {"type": "string"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "vscode": "https://marketplace.visualstudio.com/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "SoftwareApplication": "https://schema.org/SoftwareApplication",
+    "SoftwareSourceCode": "https://schema.org/SoftwareSourceCode",
+    "Person": "https://schema.org/Person",
+    "Organization": "https://schema.org/Organization",
+    "AggregateRating": "https://schema.org/AggregateRating",
+
+    "vscode:extensionId": {"@type": "xsd:string"},
+    "vscode:extensionName": {"@type": "xsd:string"},
+    "vscode:publisherName": {"@type": "xsd:string"},
+    "vscode:installCount": {"@type": "xsd:integer"},
+    "vscode:version": {"@type": "xsd:string"},
+    "vscode:vsixDownloadUrl": {"@type": "@id"},
+    "vscode:filterType": {"@type": "xsd:integer"},
+    "vscode:queryFlags": {"@type": "xsd:integer"},
+
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
+    "url": "https://schema.org/url",
+    "datePublished": "https://schema.org/datePublished",
+    "dateModified": "https://schema.org/dateModified",
+    "keywords": "https://schema.org/keywords",
+    "applicationCategory": "https://schema.org/applicationCategory",
+    "aggregateRating": "https://schema.org/aggregateRating",
+    "ratingValue": "https://schema.org/ratingValue",
+    "ratingCount": "https://schema.org/ratingCount",
+    "author": "https://schema.org/author",
+    "downloadUrl": "https://schema.org/downloadUrl",
+    "softwareVersion": "https://schema.org/softwareVersion",
+    "operatingSystem": "https://schema.org/operatingSystem"
+  },
+  "@graph": [
+    {
+      "@id": "https://marketplace.visualstudio.com/",
+      "@type": "Organization",
+      "name": "VS Code Marketplace",
+      "description": "Microsoft's official extension marketplace for Visual Studio Code.",
+      "url": "https://marketplace.visualstudio.com/",
+      "parentOrganization": {
+        "@id": "https://www.microsoft.com/",
+        "name": "Microsoft"
+      }
+    }
+  ]
+}

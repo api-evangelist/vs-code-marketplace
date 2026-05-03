@@ -1,0 +1,75 @@
+{
+  "title": "VS Code Marketplace Extension Structure",
+  "description": "JSON structure documentation for the VS Code Marketplace Gallery API extension response.",
+  "version": "7.2-preview.1",
+  "structure": {
+    "extensionQueryResponse": {
+      "description": "Top-level response from the extensionquery endpoint.",
+      "fields": {
+        "results": {
+          "type": "array",
+          "description": "Array of result sets (one per filter).",
+          "items": {
+            "extensions": {
+              "type": "array",
+              "description": "Array of matching Extension objects."
+            },
+            "pagingToken": {
+              "type": "string",
+              "description": "Token for cursor-based pagination."
+            },
+            "resultMetadata": {
+              "type": "array",
+              "description": "Metadata about result counts per category, tag, or facet."
+            }
+          }
+        }
+      }
+    },
+    "extension": {
+      "description": "A single VS Code extension from the Marketplace.",
+      "fields": {
+        "extensionId": {"type": "string", "format": "uuid", "description": "Unique GUID for the extension."},
+        "extensionName": {"type": "string", "description": "Short name used in extension IDs (publisher.name)."},
+        "displayName": {"type": "string", "description": "Human-readable extension name."},
+        "shortDescription": {"type": "string", "description": "One-line description."},
+        "publisher": {"type": "object", "description": "Publisher metadata including name and verification status."},
+        "versions": {"type": "array", "description": "Available versions with asset URIs and file listings."},
+        "categories": {"type": "array", "description": "Marketplace categories (e.g., Linters, Debuggers, Themes)."},
+        "tags": {"type": "array", "description": "Searchable keyword tags."},
+        "statistics": {"type": "array", "description": "Install count, rating, and trending statistics."},
+        "publishedDate": {"type": "string", "format": "date-time"},
+        "lastUpdated": {"type": "string", "format": "date-time"},
+        "averageRating": {"type": "number", "description": "0-5 rating average."},
+        "ratingCount": {"type": "integer"}
+      }
+    },
+    "extensionQueryRequest": {
+      "description": "Request body for the extensionquery POST endpoint.",
+      "fields": {
+        "filters": {
+          "type": "array",
+          "description": "Filter criteria applied to the query.",
+          "items": {
+            "criteria": {
+              "type": "array",
+              "description": "Criteria objects each with filterType (int) and value (string). FilterType: 1=Tag, 4=ExtensionId, 5=Category, 7=ExtensionName, 8=Target, 10=FullText, 12=ExcludeWithFlags."
+            },
+            "pageNumber": {"type": "integer", "default": 1},
+            "pageSize": {"type": "integer", "default": 10, "maximum": 100},
+            "sortBy": {"type": "integer", "description": "0=Default, 4=Downloads, 5=Rating, 6=PublishedDate, 12=InstallCount."},
+            "sortOrder": {"type": "integer", "description": "0=Default, 1=Ascending, 2=Descending."}
+          }
+        },
+        "flags": {
+          "type": "integer",
+          "description": "Bitmask controlling response detail. 16863=AllAttributes. Common values: 7 (minimal), 914 (standard), 16863 (all)."
+        },
+        "assetTypes": {
+          "type": "array",
+          "description": "Asset types to include (e.g., Microsoft.VisualStudio.Services.VSIXPackage)."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+extends: spectral:oas
+rules:
+  vscode-marketplace-operation-ids-camel-case:
+    description: Operation IDs must use camelCase.
+    message: "Operation ID '{{value}}' must be camelCase."
+    severity: warn
+    given: "$.paths[*][*].operationId"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[a-z][a-zA-Z0-9]*$"
+
+  vscode-marketplace-tags-title-case:
+    description: Tags must use Title Case.
+    message: "Tag '{{value}}' must use Title Case."
+    severity: warn
+    given: "$.paths[*][*].tags[*]"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[A-Z][a-zA-Z0-9 \\-]*$"
+
+  vscode-marketplace-operation-summary-required:
+    description: All operations must have a summary.
+    message: "Operation must have a summary."
+    severity: error
+    given: "$.paths[*][get,post,put,patch,delete]"
+    then:
+      field: summary
+      function: defined
+
+  vscode-marketplace-operation-description-required:
+    description: All operations should have a description.
+    message: "Operation should have a description."
+    severity: info
+    given: "$.paths[*][get,post,put,patch,delete]"
+    then:
+      field: description
+      function: defined
+
+  vscode-marketplace-post-has-request-body:
+    description: POST operations must define a request body.
+    message: "POST operation must define a requestBody."
+    severity: error
+    given: "$.paths[*].post"
+    then:
+      field: requestBody
+      function: defined
+
+  vscode-marketplace-response-200-or-202:
+    description: GET and POST operations must define a 200 response.
+    message: "GET/POST operation must define a 200 response."
+    severity: warn
+    given: "$.paths[*][get,post]"
+    then:
+      field: responses.200
+      function: defined
+
+  vscode-marketplace-api-version-query-param:
+    description: >-
+      Marketplace Gallery API endpoints require an api-version query parameter.
+    message: "Marketplace API operations should document the api-version parameter."
+    severity: info
+    given: "$.paths[*][post,get].parameters[*]"
+    then:
+      function: schema
+      functionOptions:
+        schema:
+          type: object
+          properties:
+            name:
+              type: string
+
+  vscode-marketplace-path-lowercase:
+    description: API path segments should be lowercase.
+    message: "Path '{{path}}' should use lowercase segments."
+    severity: warn
+    given: "$.paths"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^(\\/[a-z0-9{}\\-._~]*)*$"
+
+  vscode-marketplace-schema-descriptions:
+    description: Schema properties should have descriptions.
+    message: "Schema property should have a description."
+    severity: info
+    given: "$.components.schemas[*].properties[*]"
+    then:
+      field: description
+      function: defined

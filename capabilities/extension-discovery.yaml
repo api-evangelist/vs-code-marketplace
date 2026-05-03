@@ -1,0 +1,169 @@
+naftiko: "1.0.0-alpha1"
+
+info:
+  label: "VS Code Extension Discovery"
+  description: >-
+    Extension discovery and management workflow for the VS Code Marketplace Gallery API.
+    Enables searching for extensions by keyword, tag, or category; retrieving publisher
+    details; and downloading VSIX packages. Used by developer tooling, IDE integrations,
+    and automation workflows that manage VS Code extension ecosystems.
+  tags:
+    - Developer Tools
+    - Extensions
+    - IDE
+    - Marketplace
+    - Microsoft
+    - Visual Studio Code
+  created: "2026-05-03"
+  modified: "2026-05-03"
+
+binds:
+  - namespace: env
+    keys: {}
+
+capability:
+  consumes:
+    - import: vscode-gallery
+      location: ./shared/gallery-api.yaml
+
+  exposes:
+    - type: rest
+      port: 8080
+      namespace: vscode-extension-discovery-api
+      description: "Unified REST API for VS Code extension discovery and publisher information."
+      resources:
+        - path: /v1/extensions
+          name: extensions
+          description: "Search and discover VS Code extensions."
+          operations:
+            - method: POST
+              name: search-extensions
+              description: "Search extensions by keyword, tag, publisher, or extension ID."
+              call: "vscode-gallery.query-extensions"
+              with:
+                filters: "rest.filters"
+                flags: "rest.flags"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+        - path: /v1/publishers/{publisherName}
+          name: publisher
+          description: "Get publisher information."
+          operations:
+            - method: GET
+              name: get-publisher
+              description: "Retrieve details about a specific extension publisher."
+              call: "vscode-gallery.get-publisher"
+              with:
+                publisherName: "rest.publisherName"
+              outputParameters:
+                - type: object
+                  mapping: "$."
+
+    - type: mcp
+      port: 9090
+      namespace: vscode-extension-discovery-mcp
+      transport: http
+      description: "MCP server for AI-assisted VS Code extension discovery and analysis."
+      tools:
+        - name: search-extensions
+          description: "Search VS Code Marketplace for extensions by keyword, tag, or category. Returns extension metadata, install counts, and ratings."
+          hints:
+            readOnly: true
+            idempotent: true
+            openWorld: true
+          call: "vscode-gallery.query-extensions"
+          with:
+            filters: "tools.filters"
+            flags: "tools.flags"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: search-extensions-by-tag
+          description: "Search VS Code Marketplace for extensions with a specific tag."
+          hints:
+            readOnly: true
+            idempotent: true
+            openWorld: true
+          call: "vscode-gallery.query-extensions"
+          with:
+            filters:
+              - criteria:
+                  - filterType: 1
+                    value: "tools.tag"
+                pageNumber: 1
+                pageSize: 20
+                sortBy: 4
+                sortOrder: 2
+            flags: 16863
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: search-extensions-by-category
+          description: "Search VS Code Marketplace for extensions in a specific category (e.g., Debuggers, Themes, Linters)."
+          hints:
+            readOnly: true
+            idempotent: true
+            openWorld: true
+          call: "vscode-gallery.query-extensions"
+          with:
+            filters:
+              - criteria:
+                  - filterType: 5
+                    value: "tools.category"
+                pageNumber: 1
+                pageSize: 20
+                sortBy: 4
+                sortOrder: 2
+            flags: 16863
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: get-extension-by-id
+          description: "Get details for a specific VS Code extension by its publisher.name ID (e.g., ms-python.python)."
+          hints:
+            readOnly: true
+            idempotent: true
+          call: "vscode-gallery.query-extensions"
+          with:
+            filters:
+              - criteria:
+                  - filterType: 7
+                    value: "tools.extensionId"
+                pageNumber: 1
+                pageSize: 1
+            flags: 16863
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: get-publisher
+          description: "Get information about a VS Code extension publisher, including their extensions."
+          hints:
+            readOnly: true
+            idempotent: true
+          call: "vscode-gallery.get-publisher"
+          with:
+            publisherName: "tools.publisherName"
+          outputParameters:
+            - type: object
+              mapping: "$."
+        - name: search-trending-extensions
+          description: "Find the most popular and trending VS Code extensions sorted by install count."
+          hints:
+            readOnly: true
+            idempotent: true
+            openWorld: true
+          call: "vscode-gallery.query-extensions"
+          with:
+            filters:
+              - criteria:
+                  - filterType: 8
+                    value: "Microsoft.VisualStudio.Code"
+                pageNumber: 1
+                pageSize: 25
+                sortBy: 12
+                sortOrder: 2
+            flags: 16863
+          outputParameters:
+            - type: object
+              mapping: "$."

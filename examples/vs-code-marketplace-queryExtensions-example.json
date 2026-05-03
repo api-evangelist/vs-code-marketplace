@@ -1,0 +1,80 @@
+{
+  "summary": "Search extensions by keyword",
+  "description": "Example request and response for full-text search of VS Code extensions via the Gallery API.",
+  "request": {
+    "method": "POST",
+    "url": "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery",
+    "headers": {
+      "Accept": "application/json;api-version=7.2-preview.1",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "filters": [
+        {
+          "criteria": [
+            {
+              "filterType": 10,
+              "value": "python"
+            }
+          ],
+          "pageNumber": 1,
+          "pageSize": 5,
+          "sortBy": 4,
+          "sortOrder": 2
+        }
+      ],
+      "flags": 16863
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "results": [
+        {
+          "extensions": [
+            {
+              "extensionId": "f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5",
+              "extensionName": "python",
+              "displayName": "Python",
+              "shortDescription": "Python language support with extension access points for IntelliSense, debugging, linting...",
+              "publisher": {
+                "publisherId": "998b010b-e2af-44a5-a6cd-0b5fd3b9b6f8",
+                "publisherName": "ms-python",
+                "displayName": "Microsoft",
+                "isDomainVerified": true
+              },
+              "versions": [
+                {
+                  "version": "2024.1.10621009",
+                  "lastUpdated": "2024-01-10T00:00:00Z",
+                  "assetUri": "https://ms-python.gallerycdn.vsassets.io/extensions/ms-python/python/2024.1.10621009/1704844800000",
+                  "fallbackAssetUri": "https://ms-python.gallery.vsassets.io/_apis/public/gallery/publisher/ms-python/extension/python/2024.1.10621009/assetbyname"
+                }
+              ],
+              "categories": ["Programming Languages", "Linters", "Debuggers"],
+              "tags": ["python", "linting", "debugging", "formatting"],
+              "statistics": [
+                {"statisticName": "install", "value": 85000000},
+                {"statisticName": "averagerating", "value": 4.5},
+                {"statisticName": "ratingcount", "value": 2000}
+              ],
+              "publishedDate": "2016-04-14T00:00:00Z",
+              "lastUpdated": "2024-01-10T00:00:00Z",
+              "averageRating": 4.5,
+              "ratingCount": 2000
+            }
+          ],
+          "pagingToken": null,
+          "resultMetadata": [
+            {
+              "metadataType": "ResultCount",
+              "metadataItems": [
+                {"name": "TotalCount", "count": 1247}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

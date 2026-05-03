@@ -1,0 +1,20 @@
+{
+  "summary": "Download a VS Code extension VSIX package",
+  "description": "Example request for downloading the latest VSIX package of a specific extension.",
+  "request": {
+    "method": "GET",
+    "url": "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/ms-python/vsextensions/python/latest/vspackage",
+    "headers": {
+      "Accept": "application/octet-stream"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/octet-stream",
+      "Content-Disposition": "attachment; filename=ms-python.python-2024.1.10621009.vsix"
+    },
+    "body": "<binary VSIX package data>"
+  },
+  "notes": "The VSIX file is a ZIP archive containing extension manifest, code, and assets. Use 'latest' as version to always download the most recent release."
+}
