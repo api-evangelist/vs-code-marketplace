@@ -1,0 +1,13 @@
+{
+  "repo": "vs-code-marketplace",
+  "feeds": [
+    {
+      "source": "https://code.visualstudio.com/blogs",
+      "feed_url": "https://code.visualstudio.com/feed.xml",
+      "saved": 10,
+      "title": "Visual Studio Code - Code Editing. Redefined."
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:38:14Z"
+}
