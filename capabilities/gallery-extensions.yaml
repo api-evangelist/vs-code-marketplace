@@ -1,0 +1,83 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: VS Code Marketplace Gallery API — Extensions
+  description: 'VS Code Marketplace Gallery API — Extensions. 1 operations. Lead operation: Query Extensions. Self-contained
+    Naftiko capability covering one Vs Code Marketplace business surface.'
+  tags:
+  - Vs Code Marketplace
+  - Extensions
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    VS_CODE_MARKETPLACE_API_KEY: VS_CODE_MARKETPLACE_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: gallery-extensions
+    baseUri: https://marketplace.visualstudio.com/_apis/public/gallery
+    description: VS Code Marketplace Gallery API — Extensions business capability. Self-contained, no shared references.
+    resources:
+    - name: extensionquery
+      path: /extensionquery
+      operations:
+      - name: queryextensions
+        method: POST
+        description: Query Extensions
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: api-version
+          in: query
+          type: string
+          description: API version string.
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: true
+  exposes:
+  - type: rest
+    namespace: gallery-extensions-rest
+    port: 8080
+    description: REST adapter for VS Code Marketplace Gallery API — Extensions. One Spectral-compliant resource per consumed
+      operation, prefixed with /v1.
+    resources:
+    - path: /v1/extensionquery
+      name: extensionquery
+      description: REST surface for extensionquery.
+      operations:
+      - method: POST
+        name: queryextensions
+        description: Query Extensions
+        call: gallery-extensions.queryextensions
+        with:
+          api-version: rest.api-version
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: gallery-extensions-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for VS Code Marketplace Gallery API — Extensions. One tool per consumed operation, routed inline
+      through this capability's consumes block.
+    tools:
+    - name: query-extensions
+      description: Query Extensions
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: gallery-extensions.queryextensions
+      with:
+        api-version: tools.api-version
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
