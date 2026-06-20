@@ -8,7 +8,7 @@ apis:
       search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It
       supports querying extensions by name, publisher, category, and tags, as well as fetching extension details,
       versions, statistics, and reviews.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: >-
       https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
     baseURL: https://marketplace.visualstudio.com/_apis/public/gallery
@@ -38,7 +38,7 @@ description: >-
   extensions for languages, debuggers, themes, and developer tools. It provides a Gallery API for programmatically
   searching, discovering, and retrieving extension metadata, enabling integration with editors, tooling, and automation
   workflows.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Developer Tools
   - Extensions
