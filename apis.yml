@@ -47,6 +47,8 @@ tags:
 type: Index
 access: 3rd-Party
 common:
+  - type: AgenticAccess
+    url: agentic-access/vs-code-marketplace-agentic-access.yml
   - type: DomainSecurity
     url: security/vs-code-marketplace-domain-security.yml
   - url: https://marketplace.visualstudio.com/
