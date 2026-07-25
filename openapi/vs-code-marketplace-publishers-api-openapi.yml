@@ -1,0 +1,185 @@
+openapi: 3.0.3
+info:
+  title: VS Code Marketplace Gallery Assets Publishers API
+  description: The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It supports querying extensions by name, publisher, category, and tags, as well as fetching extension details, versions, statistics, and reviews.
+  version: 7.2-preview.1
+  contact:
+    name: Microsoft Visual Studio Code
+    url: https://code.visualstudio.com/
+  termsOfService: https://marketplace.visualstudio.com/policies/agree
+servers:
+- url: https://marketplace.visualstudio.com/_apis/public/gallery
+  description: VS Code Marketplace Gallery API
+security: []
+tags:
+- name: Publishers
+  description: Publisher management and information
+paths:
+  /publishers/{publisherName}:
+    get:
+      operationId: getPublisher
+      summary: Get Publisher
+      description: Retrieve information about a specific Marketplace publisher.
+      tags:
+      - Publishers
+      parameters:
+      - name: publisherName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The publisher's unique name.
+      - name: api-version
+        in: query
+        schema:
+          type: string
+          default: 7.2-preview.1
+      responses:
+        '200':
+          description: Publisher details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Publisher'
+        '404':
+          description: Publisher not found
+components:
+  schemas:
+    ExtensionVersion:
+      type: object
+      properties:
+        version:
+          type: string
+          description: Semantic version string (e.g., 2024.1.0).
+        flags:
+          type: integer
+        lastUpdated:
+          type: string
+          format: date-time
+        files:
+          type: array
+          items:
+            type: object
+            properties:
+              assetType:
+                type: string
+              source:
+                type: string
+                format: uri
+        properties:
+          type: array
+          items:
+            type: object
+            properties:
+              key:
+                type: string
+              value:
+                type: string
+        assetUri:
+          type: string
+          format: uri
+        fallbackAssetUri:
+          type: string
+          format: uri
+    Publisher:
+      type: object
+      properties:
+        publisherId:
+          type: string
+          format: uuid
+          description: Unique identifier for the publisher.
+        publisherName:
+          type: string
+          description: Publisher's unique name (used in extension IDs).
+        displayName:
+          type: string
+          description: Publisher's display name.
+        flags:
+          type: integer
+        domain:
+          type: string
+          description: Publisher's verified domain.
+        isDomainVerified:
+          type: boolean
+          description: Whether the publisher's domain is verified.
+        extensions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Extension'
+    Extension:
+      type: object
+      properties:
+        publisher:
+          $ref: '#/components/schemas/Publisher'
+        extensionId:
+          type: string
+          format: uuid
+          description: Unique identifier for the extension.
+        extensionName:
+          type: string
+          description: The extension's short name.
+        displayName:
+          type: string
+          description: Human-readable display name.
+        flags:
+          type: integer
+          description: Extension flags bitmask.
+        lastUpdated:
+          type: string
+          format: date-time
+          description: When the extension was last updated.
+        publishedDate:
+          type: string
+          format: date-time
+          description: When the extension was first published.
+        releaseDate:
+          type: string
+          format: date-time
+          description: When the current version was released.
+        shortDescription:
+          type: string
+          description: Brief description of the extension.
+        versions:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtensionVersion'
+        categories:
+          type: array
+          items:
+            type: string
+          description: Extension categories.
+        tags:
+          type: array
+          items:
+            type: string
+          description: Extension tags.
+        statistics:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtensionStatistic'
+        installationTargets:
+          type: array
+          items:
+            type: object
+            properties:
+              target:
+                type: string
+              targetVersion:
+                type: string
+        deploymentType:
+          type: integer
+        averageRating:
+          type: number
+          description: Average user rating (0-5).
+        ratingCount:
+          type: integer
+          description: Number of ratings submitted.
+    ExtensionStatistic:
+      type: object
+      properties:
+        statisticName:
+          type: string
+          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
+        value:
+          type: number
+          description: The statistic value.

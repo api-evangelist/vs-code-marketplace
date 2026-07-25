@@ -1,0 +1,53 @@
+openapi: 3.0.3
+info:
+  title: VS Code Marketplace Gallery Assets API
+  description: The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It supports querying extensions by name, publisher, category, and tags, as well as fetching extension details, versions, statistics, and reviews.
+  version: 7.2-preview.1
+  contact:
+    name: Microsoft Visual Studio Code
+    url: https://code.visualstudio.com/
+  termsOfService: https://marketplace.visualstudio.com/policies/agree
+servers:
+- url: https://marketplace.visualstudio.com/_apis/public/gallery
+  description: VS Code Marketplace Gallery API
+security: []
+tags:
+- name: Assets
+  description: Download extension assets including VSIX packages
+paths:
+  /publishers/{publisherName}/vsextensions/{extensionName}/{version}/vspackage:
+    get:
+      operationId: downloadExtension
+      summary: Download Extension VSIX Package
+      description: Download the VSIX package for a specific extension version. Use "latest" as the version to download the most recent published version.
+      tags:
+      - Assets
+      parameters:
+      - name: publisherName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The publisher's unique name (e.g., ms-python).
+      - name: extensionName
+        in: path
+        required: true
+        schema:
+          type: string
+        description: The extension's unique name (e.g., python).
+      - name: version
+        in: path
+        required: true
+        schema:
+          type: string
+        description: Extension version (e.g., 2024.1.0) or "latest".
+      responses:
+        '200':
+          description: VSIX package binary
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: Extension or version not found
