@@ -1,44 +1,85 @@
 aid: vs-code-marketplace
 url: https://raw.githubusercontent.com/api-evangelist/vs-code-marketplace/refs/heads/main/apis.yml
 apis:
-  - aid: vs-code-marketplace:vs-code-marketplace-gallery-api
-    name: VS Code Marketplace Gallery API
-    description: >-
-      The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling
-      search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It
-      supports querying extensions by name, publisher, category, and tags, as well as fetching extension details,
-      versions, statistics, and reviews.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: >-
+- aid: vs-code-marketplace:vs-code-marketplace-assets-api
+  name: VS Code Marketplace Assets API
+  description: Download extension assets including VSIX packages
+  humanURL: >-
+    https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
+  baseURL: https://marketplace.visualstudio.com/_apis/public/gallery
+  tags:
+  - Assets
+  properties:
+  - type: OpenAPI
+    url: openapi/vs-code-marketplace-assets-api-openapi.yml
+  - type: Documentation
+    url: https://marketplace.visualstudio.com/
+  - type: BaseURL
+    url: https://marketplace.visualstudio.com/_apis/public/gallery
+  - type: SourceCode
+    url: >-
       https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
-    baseURL: https://marketplace.visualstudio.com/_apis/public/gallery
-    tags:
-      - Developer Tools
-      - Extensions
-      - IDE
-      - Marketplace
-      - Microsoft
-      - Visual Studio Code
-    properties:
-      - url: https://marketplace.visualstudio.com/
-        type: Documentation
-      - url: https://marketplace.visualstudio.com/_apis/public/gallery
-        type: BaseURL
-      - url: >-
-          https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
-        type: SourceCode
-      - url: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
-        type: Guide
-      - url: >-
-          https://raw.githubusercontent.com/api-evangelist/vs-code-marketplace/refs/heads/main/openapi/vs-code-marketplace-gallery-api-openapi.yml
-        type: OpenAPI
+  - type: Guide
+    url: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+- aid: vs-code-marketplace:vs-code-marketplace-extensions-api
+  name: VS Code Marketplace Extensions API
+  description: Query, search, and retrieve VS Code extensions from the Marketplace
+  humanURL: >-
+    https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
+  baseURL: https://marketplace.visualstudio.com/_apis/public/gallery
+  tags:
+  - Extensions
+  properties:
+  - type: OpenAPI
+    url: openapi/vs-code-marketplace-extensions-api-openapi.yml
+  - type: Documentation
+    url: https://marketplace.visualstudio.com/
+  - type: BaseURL
+    url: https://marketplace.visualstudio.com/_apis/public/gallery
+  - type: SourceCode
+    url: >-
+      https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
+  - type: Guide
+    url: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+- aid: vs-code-marketplace:vs-code-marketplace-publishers-api
+  name: VS Code Marketplace Publishers API
+  description: Publisher management and information
+  humanURL: >-
+    https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
+  baseURL: https://marketplace.visualstudio.com/_apis/public/gallery
+  tags:
+  - Publishers
+  properties:
+  - type: OpenAPI
+    url: openapi/vs-code-marketplace-publishers-api-openapi.yml
+  - type: Documentation
+    url: https://marketplace.visualstudio.com/
+  - type: BaseURL
+    url: https://marketplace.visualstudio.com/_apis/public/gallery
+  - type: SourceCode
+    url: >-
+      https://github.com/microsoft/vscode/blob/main/src/vs/platform/extensionManagement/common/extensionGalleryService.ts
+  - type: Guide
+    url: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
 name: VS Code Marketplace
 description: >-
   VS Code Marketplace is Microsoft's official extension marketplace for Visual Studio Code, offering thousands of
   extensions for languages, debuggers, themes, and developer tools. It provides a Gallery API for programmatically
   searching, discovering, and retrieving extension metadata, enabling integration with editors, tooling, and automation
   workflows.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vs-code-marketplace.png
 tags:
   - Developer Tools
   - Extensions
