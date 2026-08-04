@@ -1,0 +1,375 @@
+openapi: 3.0.3
+info:
+  title: VS Code Marketplace Gallery API
+  description: >-
+    The VS Code Marketplace Gallery API provides programmatic access to the
+    Visual Studio Marketplace, enabling search, discovery, and retrieval of
+    extensions for Visual Studio Code and other Microsoft developer tools. It
+    supports querying extensions by name, publisher, category, and tags, as
+    well as fetching extension details, versions, statistics, and reviews.
+  version: 7.2-preview.1
+  contact:
+    name: Microsoft Visual Studio Code
+    url: https://code.visualstudio.com/
+  termsOfService: https://marketplace.visualstudio.com/policies/agree
+servers:
+  - url: https://marketplace.visualstudio.com/_apis/public/gallery
+    description: VS Code Marketplace Gallery API
+security: []
+tags:
+  - name: Extensions
+    description: Query, search, and retrieve VS Code extensions from the Marketplace
+  - name: Publishers
+    description: Publisher management and information
+  - name: Assets
+    description: Download extension assets including VSIX packages
+paths:
+  /extensionquery:
+    post:
+      operationId: queryExtensions
+      summary: Query Extensions
+      description: >-
+        Search and filter extensions in the VS Code Marketplace using criteria
+        such as text search, tags, categories, publisher name, or extension ID.
+        Supports pagination and response flag bitmasks to control the detail
+        level returned.
+      tags:
+        - Extensions
+      parameters:
+        - name: api-version
+          in: query
+          schema:
+            type: string
+            default: 7.2-preview.1
+          description: API version string.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExtensionQueryRequest'
+      responses:
+        '200':
+          description: Extension query results
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExtensionQueryResponse'
+  /publishers/{publisherName}/vsextensions/{extensionName}/{version}/vspackage:
+    get:
+      operationId: downloadExtension
+      summary: Download Extension VSIX Package
+      description: >-
+        Download the VSIX package for a specific extension version. Use
+        "latest" as the version to download the most recent published version.
+      tags:
+        - Assets
+      parameters:
+        - name: publisherName
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The publisher's unique name (e.g., ms-python).
+        - name: extensionName
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The extension's unique name (e.g., python).
+        - name: version
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Extension version (e.g., 2024.1.0) or "latest".
+      responses:
+        '200':
+          description: VSIX package binary
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+        '404':
+          description: Extension or version not found
+  /publishers/{publisherName}:
+    get:
+      operationId: getPublisher
+      summary: Get Publisher
+      description: Retrieve information about a specific Marketplace publisher.
+      tags:
+        - Publishers
+      parameters:
+        - name: publisherName
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The publisher's unique name.
+        - name: api-version
+          in: query
+          schema:
+            type: string
+            default: 7.2-preview.1
+      responses:
+        '200':
+          description: Publisher details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Publisher'
+        '404':
+          description: Publisher not found
+components:
+  schemas:
+    ExtensionQueryRequest:
+      type: object
+      properties:
+        filters:
+          type: array
+          description: Array of filter criteria to apply to the query.
+          items:
+            $ref: '#/components/schemas/QueryFilter'
+        assetTypes:
+          type: array
+          description: Specific asset types to include in the response.
+          items:
+            type: string
+            enum:
+              - Microsoft.VisualStudio.Services.VSIXPackage
+              - Microsoft.VisualStudio.Services.Icons.Default
+              - Microsoft.VisualStudio.Services.Icons.Small
+              - Microsoft.VisualStudio.Services.Content.Details
+              - Microsoft.VisualStudio.Services.Content.Changelog
+              - Microsoft.VisualStudio.Services.Content.License
+        flags:
+          type: integer
+          description: >-
+            Bitmask of ExtensionQueryFlags controlling response detail level.
+            Common values: 16863 (AllAttributes), 914 (basic details), 7 (minimal).
+          example: 16863
+      example:
+        filters:
+          - criteria:
+              - filterType: 10
+                value: "python"
+            pageNumber: 1
+            pageSize: 10
+            sortBy: 4
+            sortOrder: 0
+        flags: 16863
+    QueryFilter:
+      type: object
+      properties:
+        criteria:
+          type: array
+          description: Filter criteria items.
+          items:
+            $ref: '#/components/schemas/FilterCriteria'
+        pageNumber:
+          type: integer
+          default: 1
+          description: Page number for pagination.
+        pageSize:
+          type: integer
+          default: 10
+          maximum: 100
+          description: Number of results per page.
+        sortBy:
+          type: integer
+          description: >-
+            Sort order field. 0=Default, 1=NoneOrRelevance, 4=Downloads,
+            5=Rating, 6=PublishedDate, 12=InstallCount.
+          default: 0
+        sortOrder:
+          type: integer
+          description: Sort direction. 0=Default, 1=Ascending, 2=Descending.
+          default: 0
+    FilterCriteria:
+      type: object
+      required:
+        - filterType
+        - value
+      properties:
+        filterType:
+          type: integer
+          description: >-
+            The type of filter to apply.
+            1=Tag, 4=ExtensionId, 5=Category, 7=ExtensionName (publisher.name),
+            8=Target (VSCode), 10=FullText, 12=ExcludeWithFlags.
+          example: 10
+        value:
+          type: string
+          description: The filter value to match.
+          example: "python"
+    ExtensionQueryResponse:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              extensions:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Extension'
+              pagingToken:
+                type: string
+              resultMetadata:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    metadataType:
+                      type: string
+                    metadataItems:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          count:
+                            type: integer
+    Extension:
+      type: object
+      properties:
+        publisher:
+          $ref: '#/components/schemas/Publisher'
+        extensionId:
+          type: string
+          format: uuid
+          description: Unique identifier for the extension.
+        extensionName:
+          type: string
+          description: The extension's short name.
+        displayName:
+          type: string
+          description: Human-readable display name.
+        flags:
+          type: integer
+          description: Extension flags bitmask.
+        lastUpdated:
+          type: string
+          format: date-time
+          description: When the extension was last updated.
+        publishedDate:
+          type: string
+          format: date-time
+          description: When the extension was first published.
+        releaseDate:
+          type: string
+          format: date-time
+          description: When the current version was released.
+        shortDescription:
+          type: string
+          description: Brief description of the extension.
+        versions:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtensionVersion'
+        categories:
+          type: array
+          items:
+            type: string
+          description: Extension categories.
+        tags:
+          type: array
+          items:
+            type: string
+          description: Extension tags.
+        statistics:
+          type: array
+          items:
+            $ref: '#/components/schemas/ExtensionStatistic'
+        installationTargets:
+          type: array
+          items:
+            type: object
+            properties:
+              target:
+                type: string
+              targetVersion:
+                type: string
+        deploymentType:
+          type: integer
+        averageRating:
+          type: number
+          description: Average user rating (0-5).
+        ratingCount:
+          type: integer
+          description: Number of ratings submitted.
+    ExtensionVersion:
+      type: object
+      properties:
+        version:
+          type: string
+          description: Semantic version string (e.g., 2024.1.0).
+        flags:
+          type: integer
+        lastUpdated:
+          type: string
+          format: date-time
+        files:
+          type: array
+          items:
+            type: object
+            properties:
+              assetType:
+                type: string
+              source:
+                type: string
+                format: uri
+        properties:
+          type: array
+          items:
+            type: object
+            properties:
+              key:
+                type: string
+              value:
+                type: string
+        assetUri:
+          type: string
+          format: uri
+        fallbackAssetUri:
+          type: string
+          format: uri
+    ExtensionStatistic:
+      type: object
+      properties:
+        statisticName:
+          type: string
+          description: >-
+            Statistic type name (e.g., install, averagerating, ratingcount,
+            trendingdaily, trendingweekly, trendingmonthly, updateCount).
+        value:
+          type: number
+          description: The statistic value.
+    Publisher:
+      type: object
+      properties:
+        publisherId:
+          type: string
+          format: uuid
+          description: Unique identifier for the publisher.
+        publisherName:
+          type: string
+          description: Publisher's unique name (used in extension IDs).
+        displayName:
+          type: string
+          description: Publisher's display name.
+        flags:
+          type: integer
+        domain:
+          type: string
+          description: Publisher's verified domain.
+        isDomainVerified:
+          type: boolean
+          description: Whether the publisher's domain is verified.
+        extensions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Extension'

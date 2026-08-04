@@ -1,0 +1,18 @@
+{
+  "provider": "vs-code-marketplace",
+  "sources": [
+    "vs-code-marketplace-assets-api-openapi.yml",
+    "vs-code-marketplace-extensions-api-openapi.yml",
+    "vs-code-marketplace-publishers-api-openapi.yml"
+  ],
+  "outputs": [
+    "vs-code-marketplace-assets-api-openapi.yml",
+    "vs-code-marketplace-extensions-api-openapi.yml",
+    "vs-code-marketplace-publishers-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
