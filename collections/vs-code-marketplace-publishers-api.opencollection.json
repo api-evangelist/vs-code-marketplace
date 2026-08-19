@@ -1,0 +1,42 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "VS Code Marketplace Gallery Assets Publishers API",
+    "version": "7.2-preview.1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Publishers",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Publisher",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/:publisherName",
+            "params": [
+              {
+                "name": "publisherName",
+                "value": "",
+                "type": "path",
+                "description": "The publisher's unique name."
+              },
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve information about a specific Marketplace publisher."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,174 @@
+{
+  "item": [
+    {
+      "id": "33531832-ed0d-4bed-b0e1-e30e27e78e3b",
+      "name": "Publishers",
+      "description": {
+        "content": "Publisher management and information",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0b43b928-1528-4439-9b14-a80d1d4b6513",
+          "name": "Get Publisher",
+          "request": {
+            "name": "Get Publisher",
+            "description": {
+              "content": "Retrieve information about a specific Marketplace publisher.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "publishers",
+                ":publisherName"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api-version",
+                  "value": "7.2-preview.1"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "publisherName",
+                  "description": "(Required) The publisher's unique name."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3ef52f74-e4f6-4006-8e06-5a1c9183f834",
+              "name": "Publisher details",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "publishers",
+                    ":publisherName"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-version",
+                      "value": "7.2-preview.1"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "publisherName",
+                      "description": "(Required) The publisher's unique name."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"publisherId\": \"937ef0c0-f9ce-eeb2-8199-866bae1a615c\",\n  \"publisherName\": \"string\",\n  \"displayName\": \"string\",\n  \"flags\": 7332,\n  \"domain\": \"string\",\n  \"isDomainVerified\": false,\n  \"extensions\": [\n    {\n      \"publisher\": {\n        \"publisherId\": \"9b7652fe-7c93-e9ec-14dd-b7c7ecb48ddb\",\n        \"publisherName\": \"string\",\n        \"displayName\": \"string\",\n        \"flags\": 8591,\n        \"domain\": \"string\",\n        \"isDomainVerified\": true,\n        \"extensions\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n          }\n        ]\n      },\n      \"extensionId\": \"12faecf8-abf7-8203-3f56-10c3115a4d17\",\n      \"extensionName\": \"string\",\n      \"displayName\": \"string\",\n      \"flags\": 1600,\n      \"lastUpdated\": \"2015-03-04T20:18:06.046Z\",\n      \"publishedDate\": \"1953-06-01T23:04:32.242Z\",\n      \"releaseDate\": \"2010-07-14T02:32:51.478Z\",\n      \"shortDescription\": \"string\",\n      \"versions\": [\n        {\n          \"version\": \"string\",\n          \"flags\": 3547,\n          \"lastUpdated\": \"1971-09-17T16:25:45.873Z\",\n          \"files\": [\n            {\n              \"assetType\": \"string\",\n              \"source\": \"https://TXbLPlEtcRiiF.jgjiVDjW0JKghkSJS1t-0fgDHs,f\"\n            },\n            {\n              \"assetType\": \"string\",\n              \"source\": \"http://KvlRRORqqfKvWPGXlXqhhNdmoMceIVU.mvrHSlwGM\"\n            }\n          ],\n          \"properties\": [\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            },\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            }\n          ],\n          \"assetUri\": \"https://YtbUnQKf.peghZUuCgrsF,Qp,QwulkCRID5wnXKPc9QLGWmAdMRg-ANsDG,\",\n          \"fallbackAssetUri\": \"http://uh.brwqmXJb3zngwLoVGmIovM6zv,neEJSe.TZI3ZitFS+f\"\n        },\n        {\n          \"version\": \"string\",\n          \"flags\": 5721,\n          \"lastUpdated\": \"2005-02-13T08:53:33.159Z\",\n          \"files\": [\n            {\n              \"assetType\": \"string\",\n              \"source\": \"http://yzMBuH.ptlaQZDI2nYW0-RRZFuRUkvbET2natHt\"\n            },\n            {\n              \"assetType\": \"string\",\n              \"source\": \"http://JMqheGENSTiNsysZdHc.pfzejfr2achccm+uO8fWd\"\n            }\n          ],\n          \"properties\": [\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            },\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            }\n          ],\n          \"assetUri\": \"http://FmONBpFKQnlE.httR8oCo03G0EXP7aBV30dNUZOP\",\n          \"fallbackAssetUri\": \"http://MdWKWHpPrEMmpFPOyPdoERrjscIr.nhilYnhAm9iWB\"\n        }\n      ],\n      \"categories\": [\n        \"string\",\n        \"string\"\n      ],\n      \"tags\": [\n        \"string\",\n        \"string\"\n      ],\n      \"statistics\": [\n        {\n          \"statisticName\": \"string\",\n          \"value\": 8069.52881972461\n        },\n        {\n          \"statisticName\": \"string\",\n          \"value\": 1350.9471835668164\n        }\n      ],\n      \"installationTargets\": [\n        {\n          \"target\": \"string\",\n          \"targetVersion\": \"string\"\n        },\n        {\n          \"target\": \"string\",\n          \"targetVersion\": \"string\"\n        }\n      ],\n      \"deploymentType\": 7552,\n      \"averageRating\": 4644.376757725782,\n      \"ratingCount\": 2580\n    },\n    {\n      \"publisher\": {\n        \"publisherId\": \"a8dc3f92-4138-8a5c-aaef-3f09bfa79a65\",\n        \"publisherName\": \"string\",\n        \"displayName\": \"string\",\n        \"flags\": 7828,\n        \"domain\": \"string\",\n        \"isDomainVerified\": false,\n        \"extensions\": [\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n          },\n          {\n            \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n          }\n        ]\n      },\n      \"extensionId\": \"2ed1d2d4-784a-f9bd-45c6-e8d8b673aa81\",\n      \"extensionName\": \"string\",\n      \"displayName\": \"string\",\n      \"flags\": 3373,\n      \"lastUpdated\": \"1990-11-25T10:31:16.317Z\",\n      \"publishedDate\": \"2005-02-07T12:58:37.147Z\",\n      \"releaseDate\": \"1974-01-19T04:29:20.876Z\",\n      \"shortDescription\": \"string\",\n      \"versions\": [\n        {\n          \"version\": \"string\",\n          \"flags\": 4394,\n          \"lastUpdated\": \"2021-06-16T07:17:22.736Z\",\n          \"files\": [\n            {\n              \"assetType\": \"string\",\n              \"source\": \"http://VuuZoQKXdpAyVQYIRGybwgAMEEJVbXPn.gevjbxDiT59mfgVPwnmG2xLjiE4LteBOlcn0Kt0jBF\"\n            },\n            {\n              \"assetType\": \"string\",\n              \"source\": \"https://JdMjTCfrmQ.whckMz3Boe4KQE8\"\n            }\n          ],\n          \"properties\": [\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            },\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            }\n          ],\n          \"assetUri\": \"https://cx.uvIRWoBxbCCsq-Vh.Yhj6kRkrDgVI4+KN9bs.tb7zzT5.aLGaT+TsIol6vxTURJxs4WUPblTiubU\",\n          \"fallbackAssetUri\": \"http://VlTGPwnaaidgEQou.abmbdSPx5mQUmvIF9GH0Gfv\"\n        },\n        {\n          \"version\": \"string\",\n          \"flags\": 2823,\n          \"lastUpdated\": \"1996-04-24T02:01:29.259Z\",\n          \"files\": [\n            {\n              \"assetType\": \"string\",\n              \"source\": \"http://QtMKmyNXyEfMrRqRIQwICZbRvNjVfU.dwuufrk4NtoNzFuDbZRIxlKZWqKVY5pUmOVSaG0iNl-b5sPmbjTM,fxr2LpM.eCXsBXuYLPnGy-tgbnH\"\n            },\n            {\n              \"assetType\": \"string\",\n              \"source\": \"http://gV.jcwNH9hP8K,VI\"\n            }\n          ],\n          \"properties\": [\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            },\n            {\n              \"key\": \"string\",\n              \"value\": \"string\"\n            }\n          ],\n          \"assetUri\": \"https://boiXWYvH.odZuib9pJA2Bpa4xCLU6cbVMQ5T.gBQK4vorjWRi1DBA,FOw\",\n          \"fallbackAssetUri\": \"https://MmozoaJetPyxSaLYVMTojWWVCFCjPWbEm.yfwTqOxwcvzscqu9kL3oU2HdZ\"\n        }\n      ],\n      \"categories\": [\n        \"string\",\n        \"string\"\n      ],\n      \"tags\": [\n        \"string\",\n        \"string\"\n      ],\n      \"statistics\": [\n        {\n          \"statisticName\": \"string\",\n          \"value\": 2583.684549673596\n        },\n        {\n          \"statisticName\": \"string\",\n          \"value\": 4932.403892317407\n        }\n      ],\n      \"installationTargets\": [\n        {\n          \"target\": \"string\",\n          \"targetVersion\": \"string\"\n        },\n        {\n          \"target\": \"string\",\n          \"targetVersion\": \"string\"\n        }\n      ],\n      \"deploymentType\": 6974,\n      \"averageRating\": 2488.044758169791,\n      \"ratingCount\": 2504\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "8ca451a8-4d50-40cb-b6f6-bbc98cde7236",
+              "name": "Publisher not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "publishers",
+                    ":publisherName"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-version",
+                      "value": "7.2-preview.1"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "publisherName",
+                      "description": "(Required) The publisher's unique name."
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://marketplace.visualstudio.com/_apis/public/gallery",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "4a5b8724-01ed-44c9-96da-0dcdbedd6414",
+    "name": "VS Code Marketplace Gallery Assets Publishers API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It supports querying extensions by name, publisher, category, and tags, as well as fetching extension details, versions, statistics, and reviews.\n\nContact Support:\n Name: Microsoft Visual Studio Code",
+      "type": "text/plain"
+    }
+  }
+}

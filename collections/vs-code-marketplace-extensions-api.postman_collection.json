@@ -1,0 +1,135 @@
+{
+  "item": [
+    {
+      "id": "932a717d-4eca-4186-b30f-f110170ce596",
+      "name": "Extensions",
+      "description": {
+        "content": "Query, search, and retrieve VS Code extensions from the Marketplace",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8eb40db6-f6aa-4189-a8c6-ad9364adbbf8",
+          "name": "Query Extensions",
+          "request": {
+            "name": "Query Extensions",
+            "description": {
+              "content": "Search and filter extensions in the VS Code Marketplace using criteria such as text search, tags, categories, publisher name, or extension ID. Supports pagination and response flag bitmasks to control the detail level returned.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "extensionquery"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api-version",
+                  "value": "7.2-preview.1",
+                  "description": "API version string."
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"filters\": [\n    {\n      \"criteria\": [\n        {\n          \"filterType\": \"<integer>\",\n          \"value\": \"<string>\"\n        },\n        {\n          \"filterType\": \"<integer>\",\n          \"value\": \"<string>\"\n        }\n      ],\n      \"pageNumber\": 1,\n      \"pageSize\": 10,\n      \"sortBy\": 0,\n      \"sortOrder\": 0\n    },\n    {\n      \"criteria\": [\n        {\n          \"filterType\": \"<integer>\",\n          \"value\": \"<string>\"\n        },\n        {\n          \"filterType\": \"<integer>\",\n          \"value\": \"<string>\"\n        }\n      ],\n      \"pageNumber\": 1,\n      \"pageSize\": 10,\n      \"sortBy\": 0,\n      \"sortOrder\": 0\n    }\n  ],\n  \"assetTypes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"flags\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "e6e38a5d-652e-4169-a473-191ecbec1ce7",
+              "name": "Extension query results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "extensionquery"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api-version",
+                      "value": "7.2-preview.1"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"filters\": [\n    {\n      \"criteria\": [\n        {\n          \"filterType\": 10,\n          \"value\": \"python\"\n        },\n        {\n          \"filterType\": 10,\n          \"value\": \"python\"\n        }\n      ],\n      \"pageNumber\": 1,\n      \"pageSize\": 10,\n      \"sortBy\": 0,\n      \"sortOrder\": 0\n    },\n    {\n      \"criteria\": [\n        {\n          \"filterType\": 10,\n          \"value\": \"python\"\n        },\n        {\n          \"filterType\": 10,\n          \"value\": \"python\"\n        }\n      ],\n      \"pageNumber\": 1,\n      \"pageSize\": 10,\n      \"sortBy\": 0,\n      \"sortOrder\": 0\n    }\n  ],\n  \"assetTypes\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"flags\": 16863\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"results\": [\n    {\n      \"extensions\": [\n        {\n          \"publisher\": {\n            \"publisherId\": \"0c3f2ad2-7b1e-152b-8f46-ff1686310728\",\n            \"publisherName\": \"string\",\n            \"displayName\": \"string\",\n            \"flags\": 8667,\n            \"domain\": \"string\",\n            \"isDomainVerified\": false,\n            \"extensions\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              }\n            ]\n          },\n          \"extensionId\": \"dc7cb2c2-f13f-0949-47da-7f93b47f9414\",\n          \"extensionName\": \"string\",\n          \"displayName\": \"string\",\n          \"flags\": 6289,\n          \"lastUpdated\": \"1951-01-30T11:29:35.895Z\",\n          \"publishedDate\": \"1964-10-24T15:45:24.799Z\",\n          \"releaseDate\": \"1986-02-27T16:15:58.709Z\",\n          \"shortDescription\": \"string\",\n          \"versions\": [\n            {\n              \"version\": \"string\",\n              \"flags\": 1894,\n              \"lastUpdated\": \"1962-11-30T05:53:13.741Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"https://ejJf.jiaTE6mf3AgN.qndITAUiH,Y3g-HCvZuudJRF2txW,CJ,,uj6U0X+,i2+yjhejHhbLio6p7w5I2idYU+\",\n              \"fallbackAssetUri\": \"http://hHwGfaySqQl.tslS8fouNjcCslYBKRQW35tkKxFlUp7,CQPVA8g52+GdLmQwJMLU3g7XqsFbdlrERkS\"\n            },\n            {\n              \"version\": \"string\",\n              \"flags\": 5020,\n              \"lastUpdated\": \"2017-06-07T10:11:44.795Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"http://LmWZrjMVZypQSBPpjB.meQdswkX4\",\n              \"fallbackAssetUri\": \"http://uxGM.sjghLz0ZurLw1msF\"\n            }\n          ],\n          \"categories\": [\n            \"string\",\n            \"string\"\n          ],\n          \"tags\": [\n            \"string\",\n            \"string\"\n          ],\n          \"statistics\": [\n            {\n              \"statisticName\": \"string\",\n              \"value\": 102.88872972413765\n            },\n            {\n              \"statisticName\": \"string\",\n              \"value\": 9117.678553074938\n            }\n          ],\n          \"installationTargets\": [\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            },\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            }\n          ],\n          \"deploymentType\": 8326,\n          \"averageRating\": 5466.525598181956,\n          \"ratingCount\": 2302\n        },\n        {\n          \"publisher\": {\n            \"publisherId\": \"46cee47f-1009-9b55-fd7c-f137a0938c9b\",\n            \"publisherName\": \"string\",\n            \"displayName\": \"string\",\n            \"flags\": 1640,\n            \"domain\": \"string\",\n            \"isDomainVerified\": true,\n            \"extensions\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              }\n            ]\n          },\n          \"extensionId\": \"e1f96891-14b1-1780-5e23-a7c357becd43\",\n          \"extensionName\": \"string\",\n          \"displayName\": \"string\",\n          \"flags\": 5389,\n          \"lastUpdated\": \"1986-02-04T06:08:19.669Z\",\n          \"publishedDate\": \"1968-11-15T10:37:00.882Z\",\n          \"releaseDate\": \"1963-06-11T06:48:41.186Z\",\n          \"shortDescription\": \"string\",\n          \"versions\": [\n            {\n              \"version\": \"string\",\n              \"flags\": 9861,\n              \"lastUpdated\": \"1984-10-07T07:54:05.652Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"https://bTlspCNyhKgGjSCZusfEmGEg.ock,e5JPXc\",\n              \"fallbackAssetUri\": \"http://wIaR.ntDmCqGdJGWBqEyNu+pgUBk0hCWVvX+CKhBE2RGwQOH\"\n            },\n            {\n              \"version\": \"string\",\n              \"flags\": 3500,\n              \"lastUpdated\": \"2023-09-03T13:34:03.329Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"http://QJ.lumegWDK3CwvGHzael0u2M,\",\n              \"fallbackAssetUri\": \"http://FzAHXPBfVsPuHDzQHWH.ezqxhoEGHHeMpnC-HzA7bemPFto\"\n            }\n          ],\n          \"categories\": [\n            \"string\",\n            \"string\"\n          ],\n          \"tags\": [\n            \"string\",\n            \"string\"\n          ],\n          \"statistics\": [\n            {\n              \"statisticName\": \"string\",\n              \"value\": 7294.9103301541245\n            },\n            {\n              \"statisticName\": \"string\",\n              \"value\": 1893.539685922514\n            }\n          ],\n          \"installationTargets\": [\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            },\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            }\n          ],\n          \"deploymentType\": 2758,\n          \"averageRating\": 1172.0750075644814,\n          \"ratingCount\": 4154\n        }\n      ],\n      \"pagingToken\": \"string\",\n      \"resultMetadata\": [\n        {\n          \"metadataType\": \"string\",\n          \"metadataItems\": [\n            {\n              \"name\": \"string\",\n              \"count\": 3134\n            },\n            {\n              \"name\": \"string\",\n              \"count\": 965\n            }\n          ]\n        },\n        {\n          \"metadataType\": \"string\",\n          \"metadataItems\": [\n            {\n              \"name\": \"string\",\n              \"count\": 2087\n            },\n            {\n              \"name\": \"string\",\n              \"count\": 4570\n            }\n          ]\n        }\n      ]\n    },\n    {\n      \"extensions\": [\n        {\n          \"publisher\": {\n            \"publisherId\": \"cd97513d-c95a-4781-7ec0-6f4b94c50253\",\n            \"publisherName\": \"string\",\n            \"displayName\": \"string\",\n            \"flags\": 2551,\n            \"domain\": \"string\",\n            \"isDomainVerified\": false,\n            \"extensions\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              }\n            ]\n          },\n          \"extensionId\": \"439c7ee1-cd95-91bd-7ec8-7d66f2fb6a09\",\n          \"extensionName\": \"string\",\n          \"displayName\": \"string\",\n          \"flags\": 144,\n          \"lastUpdated\": \"2017-11-24T16:30:38.117Z\",\n          \"publishedDate\": \"1982-12-05T21:36:51.307Z\",\n          \"releaseDate\": \"1981-01-12T02:07:37.456Z\",\n          \"shortDescription\": \"string\",\n          \"versions\": [\n            {\n              \"version\": \"string\",\n              \"flags\": 3862,\n              \"lastUpdated\": \"1950-06-08T13:59:35.407Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"http://eABFdMcl.psqu9iPaPUSIjGQtAUHZGeHL3rzhblX54qskayvZFxsbKp\",\n              \"fallbackAssetUri\": \"https://yxpPvXsIEHoVthWaefaOnxP.mycQuifHhSi\"\n            },\n            {\n              \"version\": \"string\",\n              \"flags\": 6281,\n              \"lastUpdated\": \"1973-06-07T09:10:32.930Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"https://WSYEdutjYI.bjpRF290KzvIX3tGzRoB0VGlD0EHL2YoIUzOgOQ0iKyHs67CfkmkGmb4tAcWg\",\n              \"fallbackAssetUri\": \"http://ZfKBVVPGnRUlLuezZYrwimdD.wnzOmgIu,cyjVAaK+-WLHJHBwR5YtjwuQIYmKtnuH0TJwA1MN\"\n            }\n          ],\n          \"categories\": [\n            \"string\",\n            \"string\"\n          ],\n          \"tags\": [\n            \"string\",\n            \"string\"\n          ],\n          \"statistics\": [\n            {\n              \"statisticName\": \"string\",\n              \"value\": 8710.854685360899\n            },\n            {\n              \"statisticName\": \"string\",\n              \"value\": 3878.72895944684\n            }\n          ],\n          \"installationTargets\": [\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            },\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            }\n          ],\n          \"deploymentType\": 3483,\n          \"averageRating\": 985.4170401943941,\n          \"ratingCount\": 1542\n        },\n        {\n          \"publisher\": {\n            \"publisherId\": \"d1ba5387-1066-1195-d0eb-ece00efc0fc5\",\n            \"publisherName\": \"string\",\n            \"displayName\": \"string\",\n            \"flags\": 6970,\n            \"domain\": \"string\",\n            \"isDomainVerified\": false,\n            \"extensions\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Extension detected>\"\n              }\n            ]\n          },\n          \"extensionId\": \"ade4a911-3d56-cf52-9905-fa36cded33f9\",\n          \"extensionName\": \"string\",\n          \"displayName\": \"string\",\n          \"flags\": 119,\n          \"lastUpdated\": \"1948-07-28T03:49:20.751Z\",\n          \"publishedDate\": \"2022-06-06T10:12:34.774Z\",\n          \"releaseDate\": \"1989-06-30T20:19:25.126Z\",\n          \"shortDescription\": \"string\",\n          \"versions\": [\n            {\n              \"version\": \"string\",\n              \"flags\": 7471,\n              \"lastUpdated\": \"1999-12-11T02:39:39.789Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"https://lJvSlXlGjtDVxsrh.beixxKDlGgMDgHLUMRLZ3YQe3jBQBaiWM,WqRwdCO\",\n              \"fallbackAssetUri\": \"http://jfNhNAXtYOROAzEspFBBWXeEEtJ.ytm.dt-KzArcRZ0kMLfAUfHtGEnDsFE1nE0Lz\"\n            },\n            {\n              \"version\": \"string\",\n              \"flags\": 4154,\n              \"lastUpdated\": \"2016-05-23T08:08:13.854Z\",\n              \"files\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"properties\": [\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                },\n                {\n                  \"value\": \"<Error: Too many levels of nesting to fake this schema>\"\n                }\n              ],\n              \"assetUri\": \"https://KrifSptrYdcwwPGzKzY.nwjtCCyJUqtMW\",\n              \"fallbackAssetUri\": \"https://XckKBKm.khC86bS8Wg24Wt9VR2gjMsUeLJf65.-zM\"\n            }\n          ],\n          \"categories\": [\n            \"string\",\n            \"string\"\n          ],\n          \"tags\": [\n            \"string\",\n            \"string\"\n          ],\n          \"statistics\": [\n            {\n              \"statisticName\": \"string\",\n              \"value\": 8362.53349340551\n            },\n            {\n              \"statisticName\": \"string\",\n              \"value\": 7135.669046118371\n            }\n          ],\n          \"installationTargets\": [\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            },\n            {\n              \"target\": \"string\",\n              \"targetVersion\": \"string\"\n            }\n          ],\n          \"deploymentType\": 4064,\n          \"averageRating\": 5043.2906626612985,\n          \"ratingCount\": 4281\n        }\n      ],\n      \"pagingToken\": \"string\",\n      \"resultMetadata\": [\n        {\n          \"metadataType\": \"string\",\n          \"metadataItems\": [\n            {\n              \"name\": \"string\",\n              \"count\": 4699\n            },\n            {\n              \"name\": \"string\",\n              \"count\": 4533\n            }\n          ]\n        },\n        {\n          \"metadataType\": \"string\",\n          \"metadataItems\": [\n            {\n              \"name\": \"string\",\n              \"count\": 9067\n            },\n            {\n              \"name\": \"string\",\n              \"count\": 1141\n            }\n          ]\n        }\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://marketplace.visualstudio.com/_apis/public/gallery",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5965d44c-1aae-4fae-8dc0-d889d8a6cf94",
+    "name": "VS Code Marketplace Gallery Assets Extensions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It supports querying extensions by name, publisher, category, and tags, as well as fetching extension details, versions, statistics, and reviews.\n\nContact Support:\n Name: Microsoft Visual Studio Code",
+      "type": "text/plain"
+    }
+  }
+}

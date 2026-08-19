@@ -1,0 +1,41 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "VS Code Marketplace Gallery Assets Extensions API",
+    "version": "7.2-preview.1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Extensions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query Extensions",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery",
+            "params": [
+              {
+                "name": "api-version",
+                "value": "",
+                "type": "query",
+                "description": "API version string."
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Search and filter extensions in the VS Code Marketplace using criteria such as text search, tags, categories, publisher name, or extension ID. Supports pagination and response flag bitmasks to control the detail level returned."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

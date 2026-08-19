@@ -1,0 +1,49 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "VS Code Marketplace Gallery Assets API",
+    "version": "7.2-preview.1"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Assets",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Download Extension VSIX Package",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/:publisherName/vsextensions/:extensionName/:version/vspackage",
+            "params": [
+              {
+                "name": "publisherName",
+                "value": "",
+                "type": "path",
+                "description": "The publisher's unique name (e.g., ms-python)."
+              },
+              {
+                "name": "extensionName",
+                "value": "",
+                "type": "path",
+                "description": "The extension's unique name (e.g., python)."
+              },
+              {
+                "name": "version",
+                "value": "",
+                "type": "path",
+                "description": "Extension version (e.g., 2024.1.0) or \"latest\"."
+              }
+            ]
+          },
+          "docs": "Download the VSIX package for a specific extension version. Use \"latest\" as the version to download the most recent published version."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

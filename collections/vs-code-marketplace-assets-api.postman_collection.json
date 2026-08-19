@@ -1,0 +1,212 @@
+{
+  "item": [
+    {
+      "id": "fded5ce7-4746-43c6-bc30-62ad63967f4a",
+      "name": "Assets",
+      "description": {
+        "content": "Download extension assets including VSIX packages",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "dc3ba6ad-fbee-457c-9482-adf2206b3947",
+          "name": "Download Extension VSIX Package",
+          "request": {
+            "name": "Download Extension VSIX Package",
+            "description": {
+              "content": "Download the VSIX package for a specific extension version. Use \"latest\" as the version to download the most recent published version.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "publishers",
+                ":publisherName",
+                "vsextensions",
+                ":extensionName",
+                ":version",
+                "vspackage"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "publisherName",
+                  "description": "(Required) The publisher's unique name (e.g., ms-python)."
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "extensionName",
+                  "description": "(Required) The extension's unique name (e.g., python)."
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "version",
+                  "description": "(Required) Extension version (e.g., 2024.1.0) or \"latest\"."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/octet-stream"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7a08a46a-883e-40e1-9b95-c8729fbe14d1",
+              "name": "VSIX package binary",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "publishers",
+                    ":publisherName",
+                    "vsextensions",
+                    ":extensionName",
+                    ":version",
+                    "vspackage"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "publisherName",
+                      "description": "(Required) The publisher's unique name (e.g., ms-python)."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "extensionName",
+                      "description": "(Required) The extension's unique name (e.g., python)."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "version",
+                      "description": "(Required) Extension version (e.g., 2024.1.0) or \"latest\"."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/octet-stream"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/octet-stream"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "202ab545-2ef0-4a7a-8780-56df8dbcb1ab",
+              "name": "Extension or version not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "publishers",
+                    ":publisherName",
+                    "vsextensions",
+                    ":extensionName",
+                    ":version",
+                    "vspackage"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "publisherName",
+                      "description": "(Required) The publisher's unique name (e.g., ms-python)."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "extensionName",
+                      "description": "(Required) The extension's unique name (e.g., python)."
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "version",
+                      "description": "(Required) Extension version (e.g., 2024.1.0) or \"latest\"."
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://marketplace.visualstudio.com/_apis/public/gallery",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "ae66a918-9fb0-4908-85e1-8a738858e058",
+    "name": "VS Code Marketplace Gallery Assets API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It supports querying extensions by name, publisher, category, and tags, as well as fetching extension details, versions, statistics, and reviews.\n\nContact Support:\n Name: Microsoft Visual Studio Code",
+      "type": "text/plain"
+    }
+  }
+}
