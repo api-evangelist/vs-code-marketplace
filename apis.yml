@@ -67,6 +67,19 @@ description: >-
   extensions for languages, debuggers, themes, and developer tools. It provides a Gallery API for programmatically
   searching, discovering, and retrieving extension metadata, enabling integration with editors, tooling, and automation
   workflows.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: true
+  callable_host: true
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  - pricing
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
