@@ -1,6 +1,6 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: VS Code Marketplace Gallery Assets Publishers API
+  title: VS Code Marketplace Gallery Publishers API
   description: The VS Code Marketplace Gallery API provides programmatic access to the Visual Studio Marketplace, enabling search, discovery, and retrieval of extensions for Visual Studio Code and other Microsoft developer tools. It supports querying extensions by name, publisher, category, and tags, as well as fetching extension details, versions, statistics, and reviews.
   version: 7.2-preview.1
   contact:
@@ -45,67 +45,15 @@ paths:
           description: Publisher not found
 components:
   schemas:
-    ExtensionVersion:
+    ExtensionStatistic:
       type: object
       properties:
-        version:
+        statisticName:
           type: string
-          description: Semantic version string (e.g., 2024.1.0).
-        flags:
-          type: integer
-        lastUpdated:
-          type: string
-          format: date-time
-        files:
-          type: array
-          items:
-            type: object
-            properties:
-              assetType:
-                type: string
-              source:
-                type: string
-                format: uri
-        properties:
-          type: array
-          items:
-            type: object
-            properties:
-              key:
-                type: string
-              value:
-                type: string
-        assetUri:
-          type: string
-          format: uri
-        fallbackAssetUri:
-          type: string
-          format: uri
-    Publisher:
-      type: object
-      properties:
-        publisherId:
-          type: string
-          format: uuid
-          description: Unique identifier for the publisher.
-        publisherName:
-          type: string
-          description: Publisher's unique name (used in extension IDs).
-        displayName:
-          type: string
-          description: Publisher's display name.
-        flags:
-          type: integer
-        domain:
-          type: string
-          description: Publisher's verified domain.
-        isDomainVerified:
-          type: boolean
-          description: Whether the publisher's domain is verified.
-        extensions:
-          type: array
-          items:
-            $ref: '#/components/schemas/Extension'
+          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
+        value:
+          type: number
+          description: The statistic value.
     Extension:
       type: object
       properties:
@@ -174,12 +122,64 @@ components:
         ratingCount:
           type: integer
           description: Number of ratings submitted.
-    ExtensionStatistic:
+    ExtensionVersion:
       type: object
       properties:
-        statisticName:
+        version:
           type: string
-          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
-        value:
-          type: number
-          description: The statistic value.
+          description: Semantic version string (e.g., 2024.1.0).
+        flags:
+          type: integer
+        lastUpdated:
+          type: string
+          format: date-time
+        files:
+          type: array
+          items:
+            type: object
+            properties:
+              assetType:
+                type: string
+              source:
+                type: string
+                format: uri
+        properties:
+          type: array
+          items:
+            type: object
+            properties:
+              key:
+                type: string
+              value:
+                type: string
+        assetUri:
+          type: string
+          format: uri
+        fallbackAssetUri:
+          type: string
+          format: uri
+    Publisher:
+      type: object
+      properties:
+        publisherId:
+          type: string
+          format: uuid
+          description: Unique identifier for the publisher.
+        publisherName:
+          type: string
+          description: Publisher's unique name (used in extension IDs).
+        displayName:
+          type: string
+          description: Publisher's display name.
+        flags:
+          type: integer
+        domain:
+          type: string
+          description: Publisher's verified domain.
+        isDomainVerified:
+          type: boolean
+          description: Whether the publisher's domain is verified.
+        extensions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Extension'
