@@ -44,6 +44,67 @@ paths:
                 $ref: '#/components/schemas/ExtensionQueryResponse'
 components:
   schemas:
+    Publisher:
+      type: object
+      properties:
+        publisherId:
+          type: string
+          format: uuid
+          description: Unique identifier for the publisher.
+        publisherName:
+          type: string
+          description: Publisher's unique name (used in extension IDs).
+        displayName:
+          type: string
+          description: Publisher's display name.
+        flags:
+          type: integer
+        domain:
+          type: string
+          description: Publisher's verified domain.
+        isDomainVerified:
+          type: boolean
+          description: Whether the publisher's domain is verified.
+        extensions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Extension'
+    ExtensionVersion:
+      type: object
+      properties:
+        version:
+          type: string
+          description: Semantic version string (e.g., 2024.1.0).
+        flags:
+          type: integer
+        lastUpdated:
+          type: string
+          format: date-time
+        files:
+          type: array
+          items:
+            type: object
+            properties:
+              assetType:
+                type: string
+              source:
+                type: string
+                format: uri
+        properties:
+          type: array
+          items:
+            type: object
+            properties:
+              key:
+                type: string
+              value:
+                type: string
+        assetUri:
+          type: string
+          format: uri
+        fallbackAssetUri:
+          type: string
+          format: uri
     ExtensionQueryResponse:
       type: object
       properties:
@@ -88,6 +149,15 @@ components:
           type: string
           description: The filter value to match.
           example: python
+    ExtensionStatistic:
+      type: object
+      properties:
+        statisticName:
+          type: string
+          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
+        value:
+          type: number
+          description: The statistic value.
     ExtensionQueryRequest:
       type: object
       properties:
@@ -215,73 +285,3 @@ components:
         ratingCount:
           type: integer
           description: Number of ratings submitted.
-    ExtensionVersion:
-      type: object
-      properties:
-        version:
-          type: string
-          description: Semantic version string (e.g., 2024.1.0).
-        flags:
-          type: integer
-        lastUpdated:
-          type: string
-          format: date-time
-        files:
-          type: array
-          items:
-            type: object
-            properties:
-              assetType:
-                type: string
-              source:
-                type: string
-                format: uri
-        properties:
-          type: array
-          items:
-            type: object
-            properties:
-              key:
-                type: string
-              value:
-                type: string
-        assetUri:
-          type: string
-          format: uri
-        fallbackAssetUri:
-          type: string
-          format: uri
-    ExtensionStatistic:
-      type: object
-      properties:
-        statisticName:
-          type: string
-          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
-        value:
-          type: number
-          description: The statistic value.
-    Publisher:
-      type: object
-      properties:
-        publisherId:
-          type: string
-          format: uuid
-          description: Unique identifier for the publisher.
-        publisherName:
-          type: string
-          description: Publisher's unique name (used in extension IDs).
-        displayName:
-          type: string
-          description: Publisher's display name.
-        flags:
-          type: integer
-        domain:
-          type: string
-          description: Publisher's verified domain.
-        isDomainVerified:
-          type: boolean
-          description: Whether the publisher's domain is verified.
-        extensions:
-          type: array
-          items:
-            $ref: '#/components/schemas/Extension'
