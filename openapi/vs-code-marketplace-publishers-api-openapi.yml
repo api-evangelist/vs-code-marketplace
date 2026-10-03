@@ -45,40 +45,6 @@ paths:
           description: Publisher not found
 components:
   schemas:
-    ExtensionStatistic:
-      type: object
-      properties:
-        statisticName:
-          type: string
-          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
-        value:
-          type: number
-          description: The statistic value.
-    Publisher:
-      type: object
-      properties:
-        publisherId:
-          type: string
-          format: uuid
-          description: Unique identifier for the publisher.
-        publisherName:
-          type: string
-          description: Publisher's unique name (used in extension IDs).
-        displayName:
-          type: string
-          description: Publisher's display name.
-        flags:
-          type: integer
-        domain:
-          type: string
-          description: Publisher's verified domain.
-        isDomainVerified:
-          type: boolean
-          description: Whether the publisher's domain is verified.
-        extensions:
-          type: array
-          items:
-            $ref: '#/components/schemas/Extension'
     ExtensionVersion:
       type: object
       properties:
@@ -115,6 +81,40 @@ components:
         fallbackAssetUri:
           type: string
           format: uri
+    Publisher:
+      type: object
+      properties:
+        publisherId:
+          type: string
+          format: uuid
+          description: Unique identifier for the publisher.
+        publisherName:
+          type: string
+          description: Publisher's unique name (used in extension IDs).
+        displayName:
+          type: string
+          description: Publisher's display name.
+        flags:
+          type: integer
+        domain:
+          type: string
+          description: Publisher's verified domain.
+        isDomainVerified:
+          type: boolean
+          description: Whether the publisher's domain is verified.
+        extensions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Extension'
+    ExtensionStatistic:
+      type: object
+      properties:
+        statisticName:
+          type: string
+          description: Statistic type name (e.g., install, averagerating, ratingcount, trendingdaily, trendingweekly, trendingmonthly, updateCount).
+        value:
+          type: number
+          description: The statistic value.
     Extension:
       type: object
       properties:
