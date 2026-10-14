@@ -1,0 +1,2447 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- https://marketplace.visualstudio.com/vscode
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: vscode
+  url: https://marketplace.visualstudio.com/vscode
+  app_count: 152618
+  adapter: sweep-devtools.py:vscode
+  listed: 10000
+  filter: top 10000 by installs
+  dropped_by_cap: 142618
+  publishers: 7655
+  publishers_linked: 121
+  publishers_platform: 81
+  listings_partner_built: 9689
+  listings_platform_built: 311
+  note: one edge per linked publisher (listing_count on the edge); unlinked publishers counted, not written
+edges:
+- partner_name: 'Visual Studio Code Marketplace: platform-built'
+  partner: null
+  partner_match: null
+  type: marketplace
+  marketplace: own
+  channel: provider-built
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://marketplace.visualstudio.com/vscode
+  listing_count: 311
+  publishers:
+  - Microsoft
+  - Microsoft DevLabs
+  - TypeSpec
+  apps:
+  - Python
+  - Pylance
+  - Python Debugger
+  - Python Environments
+  - isort
+  platform_built: true
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+- partner_name: Salesforce
+  partner: salesforce
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/salesforce
+  partner_url: https://salesforce.com
+  partner_domain: salesforce.com
+  listing_count: 40
+  apps:
+  - Salesforce CLI
+  - Apex
+  - Aura Components
+  - Visualforce
+  - Lightning Web Components
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Red Hat
+  partner: red-hat
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/redhat
+  partner_url: https://redhat.com
+  partner_domain: redhat.com
+  listing_count: 29
+  apps:
+  - Language Support for Java(TM) by Red Hat
+  - YAML
+  - XML
+  - Red Hat Dependency Analytics
+  - Red Hat Commons
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: IBM
+  partner: ibm
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/IBM
+  partner_url: https://www.ibm.com
+  partner_domain: ibm.com
+  listing_count: 17
+  apps:
+  - Output Colorizer
+  - IBM Db2 for z/OS Developer Extension
+  - IBM Z Open Editor
+  - IBM Cloud Account
+  - watsonx Code Assistant
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: SAP SE
+  partner: sap
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SAPSE
+  partner_url: https://sap.com/
+  partner_domain: sap.com
+  listing_count: 14
+  apps:
+  - SAP Fiori Tools - Application Modeler
+  - SAP Fiori Tools - XML Annotation Language Server
+  - SAP Fiori Tools - Guided Development
+  - SAP Fiori Tools - Service Modeler
+  - SAP Fiori Tools - Extension Pack
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Oracle Corporation
+  partner: oracle
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Oracle
+  partner_url: https://www.oracle.com/
+  partner_domain: oracle.com
+  listing_count: 13
+  apps:
+  - Java
+  - Oracle SQL Developer for VSCode
+  - Oracle Developer Tools for VS Code (SQL and PLSQL)
+  - MySQL Shell for VS Code
+  - SuiteCloud Extension for Visual Studio Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Broadcom
+  partner: broadcom
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/broadcomMFD
+  partner_url: https://broadcom.com
+  partner_domain: broadcom.com
+  listing_count: 10
+  apps:
+  - Debugger for Mainframe
+  - COBOL Language Support
+  - COBOL Control Flow
+  - HLASM Language Support
+  - Explorer for Endevor
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Arm
+  partner: arm
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Arm
+  partner_url: https://www.arm.com/
+  partner_domain: arm.com
+  listing_count: 9
+  apps:
+  - Arm Tools Environment Manager
+  - Arm CMSIS Solution
+  - Arm Keil Studio Pack (MDK v6)
+  - Arm Device Manager
+  - Arm Virtual Hardware
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: SAP OSS
+  partner: sap
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SAPOSS
+  partner_url: https://sap.com/
+  partner_domain: sap.com
+  listing_count: 8
+  apps:
+  - XML Toolkit
+  - SAP Business Application Studio toolkit
+  - Remote Access for SAP Business Application Studio
+  - UI5 Language Assistant
+  - Guided Answers extension by SAP
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Qt Group
+  partner: qt
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/TheQtCompany
+  partner_url: https://qt.io
+  partner_domain: qt.io
+  listing_count: 7
+  apps:
+  - Qt Core
+  - Qt QML
+  - Qt C++
+  - Qt UI (Deprecated)
+  - Qt Extension Pack
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Intel
+  partner: intel
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/intel-corporation
+  partner_url: https://intel.com
+  partner_domain: intel.com
+  listing_count: 7
+  apps:
+  - Environment Configurator for Intel Software Developer Tools
+  - Code Sample Browser for Intel Software Developer Tools
+  - GDB with GPU Debug Support for Intel® oneAPI Toolkits
+  - Analysis Configurator for Intel Software Developer Tools
+  - Extension Pack for Intel Software Developer Tools
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Shopify
+  partner: shopify
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Shopify
+  partner_url: https://shopify.com
+  partner_domain: shopify.com
+  listing_count: 6
+  apps:
+  - Ruby LSP
+  - Ruby
+  - Polaris for VS Code
+  - Shopify Liquid
+  - RuboCop LSP
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Sourcegraph
+  partner: sourcegraph
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/sourcegraph
+  partner_url: https://sourcegraph.com
+  partner_domain: sourcegraph.com
+  listing_count: 5
+  apps:
+  - 'Cody: AI Code Assistant'
+  - Search by Sourcegraph
+  - Amp (Research Preview)
+  - JavaScript and TypeScript IntelliSense
+  - Sourcegraph Theme
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: WSO2
+  partner: wso2
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/WSO2
+  partner_url: https://wso2.com
+  partner_domain: wso2.com
+  listing_count: 5
+  apps:
+  - Ballerina
+  - WSO2 Platform [Deprecated]
+  - 'WSO2 Integrator: MI'
+  - WSO2 Enterprise Integrator
+  - Hurl Client
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: HashiCorp
+  partner: hashicorp
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/HashiCorp
+  partner_url: https://www.hashicorp.com
+  partner_domain: hashicorp.com
+  listing_count: 4
+  apps:
+  - HashiCorp Terraform
+  - HashiCorp HCL
+  - HashiCorp Sentinel
+  - HashiCorp Terraform (Preview)
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: VMware
+  partner: vmware-tanzu
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/vmware
+  partner_url: https://vmware.com
+  partner_domain: vmware.com
+  listing_count: 4
+  apps:
+  - Spring Boot Tools
+  - Spring Boot Extension Pack
+  - Cloudfoundry Manifest YML Support
+  - Concourse CI Pipeline Editor
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Gitpod
+  partner: gitpod
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/gitpod
+  partner_url: https://gitpod.io/
+  partner_domain: gitpod.io
+  listing_count: 4
+  apps:
+  - Gitpod Classic Remote
+  - Gitpod Classic
+  - Gitpod Theme
+  - ona.com
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Particle
+  partner: particle
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/particle
+  partner_url: https://particle.io
+  partner_domain: particle.io
+  listing_count: 4
+  apps:
+  - Workbench Themes
+  - Workbench Core
+  - Workbench Snippets
+  - Workbench
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Ember Tooling
+  partner: ember
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/EmberTooling
+  partner_url: https://emberjs.com
+  partner_domain: emberjs.com
+  listing_count: 4
+  apps:
+  - Ember Cli in Visual Studio Code
+  - Prettier for Handlebars
+  - Ember Language Server
+  - Ember.js Extension Pack
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Posit
+  partner: posit
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Posit
+  partner_url: https://posit.co
+  partner_domain: posit.co
+  listing_count: 4
+  apps:
+  - Shiny
+  - Shiny (deprecated)
+  - Air - R Language Support
+  - ShinyUiEditor
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: GraphQL Foundation
+  partner: graphql
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/GraphQL
+  partner_url: https://graphql.org
+  partner_domain: graphql.org
+  listing_count: 3
+  apps:
+  - 'GraphQL: Language Feature Support'
+  - 'GraphQL: Syntax Highlighting'
+  - 'GraphQL: Inline Operation Execution'
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Snyk
+  partner: snyk
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/snyk-security
+  partner_url: https://snyk.io/
+  partner_domain: snyk.io
+  listing_count: 3
+  apps:
+  - Snyk Security
+  - Vuln Cost - Security Scanner
+  - (Preview) Snyk Security
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Databricks
+  partner: databricks
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/databricks
+  partner_url: https://databricks.com
+  partner_domain: databricks.com
+  listing_count: 3
+  apps:
+  - Databricks
+  - Databricks Driver for SQLTools
+  - Neon - Serverless Postgres
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: NVIDIA
+  partner: nvidia
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/NVIDIA
+  partner_url: https://nvidia.com
+  partner_domain: nvidia.com
+  listing_count: 3
+  apps:
+  - Nsight Visual Studio Code Edition
+  - Blue Bazel
+  - Isaac Sim VS Code Edition
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Stripe
+  partner: stripe
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Stripe
+  partner_url: https://stripe.com
+  partner_domain: stripe.com
+  listing_count: 3
+  apps:
+  - Stripe
+  - Markdoc language support
+  - Endsmart
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Grafana
+  partner: grafana-com
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Grafana
+  partner_url: https://grafana.com
+  partner_domain: grafana.com
+  listing_count: 3
+  apps:
+  - Jsonnet Language Server
+  - Grafana Alloy
+  - Grafana
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Pulumi
+  partner: pulumi
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/pulumi
+  partner_url: https://pulumi.com
+  partner_domain: pulumi.com
+  listing_count: 3
+  apps:
+  - Pulumi YAML
+  - Pulumi
+  - Pulumi Copilot
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: GitKraken
+  partner: gitkraken
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/eamodio
+  partner_url: https://gitkraken.com
+  partner_domain: gitkraken.com
+  listing_count: 2
+  apps:
+  - GitLens — Git supercharged
+  - GitLens (Insiders)
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: OpenAI
+  partner: openai
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/openai
+  partner_url: https://openai.com
+  partner_domain: openai.com
+  listing_count: 2
+  apps:
+  - Codex – OpenAI’s coding agent
+  - Codex Audio
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Vue
+  partner: vuejs
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Vue
+  partner_url: https://vuejs.org
+  partner_domain: vuejs.org
+  listing_count: 2
+  apps:
+  - Vue (Official)
+  - TypeScript Vue Plugin (Volar)
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: TabNine
+  partner: tabnine
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/TabNine
+  partner_url: https://tabnine.com
+  partner_domain: tabnine.com
+  listing_count: 2
+  apps:
+  - (Legacy) Tabnine
+  - Tabnine for Enterprise
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Cline
+  partner: cline
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/saoudrizwan
+  partner_url: https://cline.bot
+  partner_domain: cline.bot
+  listing_count: 2
+  apps:
+  - Cline
+  - Cline (Nightly)
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Wix
+  partner: wix
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/wix
+  partner_url: https://www.wix.com/
+  partner_domain: wix.com
+  listing_count: 2
+  apps:
+  - Import Cost
+  - glean
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Amazon Web Services
+  partner: amazon-web-services
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/AmazonWebServices
+  partner_url: https://amazon.com
+  partner_domain: amazon.com
+  listing_count: 2
+  apps:
+  - AWS Toolkit
+  - Amazon Q
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Prisma
+  partner: prisma
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Prisma
+  partner_url: https://prisma.io
+  partner_domain: prisma.io
+  listing_count: 2
+  apps:
+  - Prisma
+  - Prisma - Insider
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Expo
+  partner: expo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/expo
+  partner_url: https://expo.dev
+  partner_domain: expo.dev
+  listing_count: 2
+  apps:
+  - Expo Tools
+  - Expo Theme
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Robocorp
+  partner: robocorp
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/robocorp
+  partner_url: https://robocorp.com
+  partner_domain: robocorp.com
+  listing_count: 2
+  apps:
+  - Robot Framework Language Server
+  - Robocorp Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: CodeSandbox
+  partner: codesandbox
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/CodeSandbox-io
+  partner_url: https://codesandbox.io/
+  partner_domain: codesandbox.io
+  listing_count: 2
+  apps:
+  - CodeSandbox (Deprecated)
+  - CodeSandbox Theme
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Supabase
+  partner: supabase
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Supabase
+  partner_url: https://supabase.com
+  partner_domain: supabase.com
+  listing_count: 2
+  apps:
+  - Supabase
+  - postgres-language-server
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Hugging Face
+  partner: hugging-face
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/HuggingFace
+  partner_url: https://huggingface.co
+  partner_domain: huggingface.co
+  listing_count: 2
+  apps:
+  - llm-vscode
+  - Hugging Face Provider for GitHub Copilot Chat
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Checkmarx
+  partner: checkmarx
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/checkmarx
+  partner_url: https://www.checkmarx.com/
+  partner_domain: checkmarx.com
+  listing_count: 2
+  apps:
+  - Checkmarx
+  - Checkmarx SAST 9.x
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Mistral AI
+  partner: mistral
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/mistralai
+  partner_url: https://mistral.ai
+  partner_domain: mistral.ai
+  listing_count: 2
+  apps:
+  - Mistral Vibe VS Code
+  - Mistral Code Enterprise
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: browserstack.com
+  partner: browserstack
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/browserstackcom
+  partner_url: https://www.browserstack.com
+  partner_domain: browserstack.com
+  listing_count: 2
+  apps:
+  - BrowserStack
+  - Nightwatch
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Mysten Labs
+  partner: mysten-labs
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/mysten
+  partner_url: https://www.mystenlabs.com
+  partner_domain: mystenlabs.com
+  listing_count: 2
+  apps:
+  - Move
+  - Move Trace Debugger
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Anthropic
+  partner: anthropic
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/anthropic
+  partner_url: https://anthropic.com
+  partner_domain: anthropic.com
+  listing_count: 1
+  apps:
+  - Claude Code for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: WakaTime
+  partner: wakatime
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/WakaTime
+  partner_url: https://wakatime.com
+  partner_domain: wakatime.com
+  listing_count: 1
+  apps:
+  - WakaTime
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Angular
+  partner: angular
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Angular
+  partner_url: https://angular.dev
+  partner_domain: angular.dev
+  listing_count: 1
+  apps:
+  - Angular Language Service
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Thunder Client
+  partner: thunder-client
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/rangav
+  partner_url: https://www.thunderclient.com
+  partner_domain: thunderclient.com
+  listing_count: 1
+  apps:
+  - Thunder Client
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Astral Software
+  partner: astral
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/charliermarsh
+  partner_url: https://astral.sh
+  partner_domain: astral.sh
+  listing_count: 1
+  apps:
+  - Ruff
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: SonarSource
+  partner: sonarsource
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SonarSource
+  partner_url: https://www.sonarsource.com
+  partner_domain: sonarsource.com
+  listing_count: 1
+  apps:
+  - SonarQube for IDE
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Continue
+  partner: continue-dev
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Continue
+  partner_url: https://continue.dev
+  partner_domain: continue.dev
+  listing_count: 1
+  apps:
+  - Continue - open-source AI code agent
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: GitLab
+  partner: gitlab
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/GitLab
+  partner_url: https://gitlab.com
+  partner_domain: gitlab.com
+  listing_count: 1
+  apps:
+  - GitLab
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: MongoDB
+  partner: mongodb
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/mongodb
+  partner_url: https://mongodb.com
+  partner_domain: mongodb.com
+  listing_count: 1
+  apps:
+  - MongoDB for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Docker
+  partner: docker
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/docker
+  partner_url: https://www.docker.com
+  partner_domain: docker.com
+  listing_count: 1
+  apps:
+  - Docker DX
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Postman
+  partner: postman
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Postman
+  partner_url: https://postman.com
+  partner_domain: postman.com
+  listing_count: 1
+  apps:
+  - Postman
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Figma
+  partner: figma
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/figma
+  partner_url: https://figma.com
+  partner_domain: figma.com
+  listing_count: 1
+  apps:
+  - Figma for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: 42Crunch
+  partner: 42crunch
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/42Crunch
+  partner_url: https://42crunch.com
+  partner_domain: 42crunch.com
+  listing_count: 1
+  apps:
+  - OpenAPI (Swagger) Editor
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Certinia
+  partner: certinia
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/financialforce
+  partner_url: https://certinia.com
+  partner_domain: certinia.com
+  listing_count: 1
+  apps:
+  - Apex Log Analyzer
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Keploy Unit and API Test Generator using AI
+  partner: keploy
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Keploy
+  partner_url: https://keploy.io
+  partner_domain: keploy.io
+  listing_count: 1
+  apps:
+  - 'Keploy: AI Testing Assistant for Developers – Supercharge Unit, Integration, and API Testing in Python, JavaScript,
+    TypeScript, Java, PHP, Go, and More'
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Bito
+  partner: bito
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Bito
+  partner_url: https://bito.ai
+  partner_domain: bito.ai
+  listing_count: 1
+  apps:
+  - Bito AI Code Reviews
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Qodo (formerly Codium)
+  partner: qodo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Codium
+  partner_url: https://qodo.ai
+  partner_domain: qodo.ai
+  listing_count: 1
+  apps:
+  - 'Qodo: AI Code Review'
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Apollo GraphQL
+  partner: apollo-graphql
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/apollographql
+  partner_url: https://www.apollographql.com
+  partner_domain: apollographql.com
+  listing_count: 1
+  apps:
+  - Apollo GraphQL
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Laravel
+  partner: laravel
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/laravel
+  partner_url: https://laravel.com
+  partner_domain: laravel.com
+  listing_count: 1
+  apps:
+  - Laravel
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Ionic
+  partner: ionic
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ionic
+  partner_url: https://ionic.io
+  partner_domain: ionic.io
+  listing_count: 1
+  apps:
+  - Ionic
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Snowflake
+  partner: snowflake
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/snowflake
+  partner_url: https://snowflake.com
+  partner_domain: snowflake.com
+  listing_count: 1
+  apps:
+  - Snowflake
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: New Relic
+  partner: new-relic
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/CodeStream
+  partner_url: https://newrelic.com
+  partner_domain: newrelic.com
+  listing_count: 1
+  apps:
+  - New Relic CodeStream
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Apache Software Foundation
+  partner: apache-software-foundation
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ASF
+  partner_url: https://apache.org
+  partner_domain: apache.org
+  listing_count: 1
+  apps:
+  - Language Server for Java by Apache NetBeans
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Redis
+  partner: redis
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Redis
+  partner_url: https://redis.io/
+  partner_domain: redis.io
+  listing_count: 1
+  apps:
+  - Redis for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Ollama
+  partner: ollama
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Ollama
+  partner_url: https://ollama.com
+  partner_domain: ollama.com
+  listing_count: 1
+  apps:
+  - Ollama
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: SAP OS
+  partner: sap
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SAPOS
+  partner_url: https://sap.com/
+  partner_domain: sap.com
+  listing_count: 1
+  apps:
+  - Application Wizard
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Bruno
+  partner: bruno-api
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/bruno-api-client
+  partner_url: https://www.usebruno.com
+  partner_domain: usebruno.com
+  listing_count: 1
+  apps:
+  - Bruno
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: altimateai
+  partner: altimate-ai
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/altimateai
+  partner_url: https://www.altimate.ai
+  partner_domain: altimate.ai
+  listing_count: 1
+  apps:
+  - Altimate Workspaces
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Parallels Desktop
+  partner: parallels
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ParallelsDesktop
+  partner_url: https://parallels.com
+  partner_domain: parallels.com
+  listing_count: 1
+  apps:
+  - Parallels Desktop
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: CodeRabbit Inc.
+  partner: coderabbit
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/CodeRabbit
+  partner_url: https://www.coderabbit.ai
+  partner_domain: coderabbit.ai
+  listing_count: 1
+  apps:
+  - CodeRabbit
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Coder
+  partner: coder
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/coder
+  partner_url: https://coder.com
+  partner_domain: coder.com
+  listing_count: 1
+  apps:
+  - Coder
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: puppet
+  partner: puppet
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/puppet
+  partner_url: https://www.puppet.com/
+  partner_domain: puppet.com
+  listing_count: 1
+  apps:
+  - Puppet
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Astral
+  partner: astral
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/astral-sh
+  partner_url: https://astral.sh
+  partner_domain: astral.sh
+  listing_count: 1
+  apps:
+  - ty
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: dbt Labs LLC
+  partner: dbt
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/dbtLabsInc
+  partner_url: https://www.getdbt.com
+  partner_domain: getdbt.com
+  listing_count: 1
+  apps:
+  - dbt
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Upstash
+  partner: upstash
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Upstash
+  partner_url: https://upstash.com
+  partner_domain: upstash.com
+  listing_count: 1
+  apps:
+  - Context7 MCP Server
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Buf
+  partner: buf
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/bufbuild
+  partner_url: https://buf.build
+  partner_domain: buf.build
+  listing_count: 1
+  apps:
+  - Buf
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: LottieFiles
+  partner: lottiefiles
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/lottiefiles
+  partner_url: https://lottiefiles.com
+  partner_domain: lottiefiles.com
+  listing_count: 1
+  apps:
+  - LottieFiles
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Modular
+  partner: modular
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/modular-mojotools
+  partner_url: https://www.modular.com
+  partner_domain: modular.com
+  listing_count: 1
+  apps:
+  - Mojo 🔥
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: CircleCI
+  partner: circleci
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/circleci
+  partner_url: https://circleci.com
+  partner_domain: circleci.com
+  listing_count: 1
+  apps:
+  - CircleCI
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Datadog
+  partner: datadog
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Datadog
+  partner_url: https://datadoghq.com
+  partner_domain: datadoghq.com
+  listing_count: 1
+  apps:
+  - Datadog
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: SAS Institute Inc.
+  partner: sas
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SAS
+  partner_url: https://www.sas.com
+  partner_domain: sas.com
+  listing_count: 1
+  apps:
+  - SAS
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: JFrog
+  partner: jfrog
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/JFrog
+  partner_url: https://jfrog.com
+  partner_domain: jfrog.com
+  listing_count: 1
+  apps:
+  - JFrog
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Redocly
+  partner: redocly
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Redocly
+  partner_url: https://redocly.com
+  partner_domain: redocly.com
+  listing_count: 1
+  apps:
+  - Redocly OpenAPI
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: TabbyML
+  partner: tabby-ml
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/TabbyML
+  partner_url: https://tabbyml.com
+  partner_domain: tabbyml.com
+  listing_count: 1
+  apps:
+  - Tabby
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: InterSystems Corporation
+  partner: intersystems
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/intersystems
+  partner_url: https://intersystems.com
+  partner_domain: intersystems.com
+  listing_count: 1
+  apps:
+  - InterSystems Language Server
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Splunk
+  partner: splunk
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Splunk
+  partner_url: https://www.splunk.com
+  partner_domain: splunk.com
+  listing_count: 1
+  apps:
+  - Splunk Extension
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: 1Password
+  partner: 1password
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/1Password
+  partner_url: https://1Password.com
+  partner_domain: 1password.com
+  listing_count: 1
+  apps:
+  - 1Password
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: OpenTofu
+  partner: opentofu
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/OpenTofu
+  partner_url: https://opentofu.org
+  partner_domain: opentofu.org
+  listing_count: 1
+  apps:
+  - OpenTofu (official)
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Open Liberty
+  partner: open-liberty
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Open-Liberty
+  partner_url: https://openliberty.io/
+  partner_domain: openliberty.io
+  listing_count: 1
+  apps:
+  - Liberty Tools
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: FlutterFlow
+  partner: flutterflow
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/FlutterFlow
+  partner_url: https://flutterflow.io
+  partner_domain: flutterflow.io
+  listing_count: 1
+  apps:
+  - 'FlutterFlow: Custom Code Editor'
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Neo4j
+  partner: neo4j
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/neo4j-extensions
+  partner_url: https://neo4j.com/
+  partner_domain: neo4j.com
+  listing_count: 1
+  apps:
+  - Neo4j for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: 'Wiz '
+  partner: wiz
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/WizCloud
+  partner_url: https://www.wiz.io/
+  partner_domain: wiz.io
+  listing_count: 1
+  apps:
+  - Wiz Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Veracode
+  partner: veracode
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Veracode
+  partner_url: https://www.veracode.com
+  partner_domain: veracode.com
+  listing_count: 1
+  apps:
+  - Veracode Scan for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Odoo
+  partner: odoo
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Odoo
+  partner_url: https://odoo.com
+  partner_domain: odoo.com
+  listing_count: 1
+  apps:
+  - Odoo
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Lightrun
+  partner: lightrun
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Lightrun
+  partner_url: https://lightrun.com
+  partner_domain: lightrun.com
+  listing_count: 1
+  apps:
+  - Lightrun
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Mojang Studios
+  partner: mojang
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/mojang-studios
+  partner_url: https://www.minecraft.net
+  partner_domain: minecraft.net
+  listing_count: 1
+  apps:
+  - Minecraft Bedrock Debugger
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Infracost
+  partner: infracost
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Infracost
+  partner_url: https://infracost.io/
+  partner_domain: infracost.io
+  listing_count: 1
+  apps:
+  - Infracost
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Black Duck
+  partner: black-duck
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/blackduck
+  partner_url: https://blackduck.com
+  partner_domain: blackduck.com
+  listing_count: 1
+  apps:
+  - Code Sight (Security)
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Confluent
+  partner: confluent
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/confluentinc
+  partner_url: https://confluent.io
+  partner_domain: confluent.io
+  listing_count: 1
+  apps:
+  - Confluent
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Swimm
+  partner: swimm
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Swimm
+  partner_url: https://swimm.io
+  partner_domain: swimm.io
+  listing_count: 1
+  apps:
+  - 'Swimm: Application Understanding Platform'
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: osohq
+  partner: oso
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/osohq
+  partner_url: https://www.osohq.com
+  partner_domain: osohq.com
+  listing_count: 1
+  apps:
+  - Oso
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Jetify
+  partner: jetify
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/jetpack-io
+  partner_url: https://www.jetify.com
+  partner_domain: jetify.com
+  listing_count: 1
+  apps:
+  - devbox by Jetify
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Aikido Security
+  partner: aikido-security
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/AikidoSecurity
+  partner_url: https://aikido.dev
+  partner_domain: aikido.dev
+  listing_count: 1
+  apps:
+  - Aikido Security
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Make
+  partner: make
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Integromat
+  partner_url: https://make.com
+  partner_domain: make.com
+  listing_count: 1
+  apps:
+  - Make Apps Editor
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Wasp
+  partner: wasp
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/wasp-lang
+  partner_url: https://wasp.sh
+  partner_domain: wasp.sh
+  listing_count: 1
+  apps:
+  - Wasp
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Amadeus
+  partner: amadeus
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/AmadeusITGroup
+  partner_url: https://amadeus.com
+  partner_domain: amadeus.com
+  listing_count: 1
+  apps:
+  - SSH key generator
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: JuliaHub Inc
+  partner: juliahub
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/JuliaComputing
+  partner_url: https://juliahub.com
+  partner_domain: juliahub.com
+  listing_count: 1
+  apps:
+  - JuliaHub
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: poolside
+  partner: poolside-ai
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/poolside-ai
+  partner_url: https://poolside.ai
+  partner_domain: poolside.ai
+  listing_count: 1
+  apps:
+  - Poolside Enterprise Assistant
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: PayPal
+  partner: paypal
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/PayPal
+  partner_url: https://www.paypal.com/
+  partner_domain: paypal.com
+  listing_count: 1
+  apps:
+  - PayPal
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Doppler
+  partner: doppler
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/doppler
+  partner_url: https://www.doppler.com
+  partner_domain: doppler.com
+  listing_count: 1
+  apps:
+  - Doppler
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: LaunchDarkly
+  partner: launchdarkly
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/LaunchDarklyOfficial
+  partner_url: https://launchdarkly.com
+  partner_domain: launchdarkly.com
+  listing_count: 1
+  apps:
+  - LaunchDarkly
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Hiro Systems
+  partner: hiro
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/HiroSystems
+  partner_url: https://www.hiro.so
+  partner_domain: hiro.so
+  listing_count: 1
+  apps:
+  - Clarity
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Stack Overflow
+  partner: stack-overflow
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/stack-overflow
+  partner_url: https://stackoverflow.com
+  partner_domain: stackoverflow.com
+  listing_count: 1
+  apps:
+  - Stack Overflow for Visual Studio Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Mend
+  partner: mend
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Mend
+  partner_url: https://mend.io
+  partner_domain: mend.io
+  listing_count: 1
+  apps:
+  - Mend Advise
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: OpenFGA
+  partner: openfga
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/openfga
+  partner_url: https://openfga.dev
+  partner_domain: openfga.dev
+  listing_count: 1
+  apps:
+  - OpenFGA
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: GitGuardian
+  partner: gitguardian
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/gitguardian-secret-security
+  partner_url: https://www.gitguardian.com
+  partner_domain: gitguardian.com
+  listing_count: 1
+  apps:
+  - GitGuardian - Secrets Security
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Esri
+  partner: esri
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Esri
+  partner_url: https://www.esri.com
+  partner_domain: esri.com
+  listing_count: 1
+  apps:
+  - ArcGIS API for JavaScript Snippets
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Windmill Labs
+  partner: windmill
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/windmill-labs
+  partner_url: https://windmill.dev
+  partner_domain: windmill.dev
+  listing_count: 1
+  apps:
+  - windmill
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+source:
+- https://marketplace.visualstudio.com/vscode
