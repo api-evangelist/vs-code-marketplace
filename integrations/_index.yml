@@ -50,6 +50,18 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vs-code-marketplace-github
+  label: GitHub
+  partner: github
+  partner_name: GitHub
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/GitHub
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: vs-code-marketplace-sap-se
   label: SAP SE
   partner: sap
@@ -70,6 +82,18 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/Oracle
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-google
+  label: Google
+  partner: google
+  partner_name: Google
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Google
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -254,6 +278,18 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vs-code-marketplace-google-cloud
+  label: Google Cloud
+  partner: google
+  partner_name: Google Cloud
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/GoogleCloudTools
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: vs-code-marketplace-snyk
   label: Snyk
   partner: snyk
@@ -310,6 +346,18 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/Grafana
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-jetbrains
+  label: JetBrains
+  partner: jetbrains
+  partner_name: JetBrains
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/JetBrains
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -622,6 +670,18 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/GitLab
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-atlassian
+  label: Atlassian
+  partner: atlassian
+  partner_name: Atlassian
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Atlassian
   source: edge
   relationship: platform-app
   status: not-a-workflow

@@ -13,7 +13,7 @@ marketplace_apps:
   filter: top 10000 by installs
   dropped_by_cap: 142618
   publishers: 7655
-  publishers_linked: 121
+  publishers_linked: 126
   publishers_platform: 81
   listings_partner_built: 9689
   listings_platform_built: 311
@@ -111,6 +111,29 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
+- partner_name: GitHub
+  partner: github
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/GitHub
+  partner_url: https://github.com
+  partner_domain: github.com
+  listing_count: 15
+  apps:
+  - GitHub Copilot Chat
+  - GitHub Copilot
+  - GitHub Pull Requests
+  - GitHub Theme
+  - GitHub Actions
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
 - partner_name: SAP SE
   partner: sap
   partner_match: domain+name-among-holders
@@ -152,6 +175,29 @@ edges:
   - Oracle Developer Tools for VS Code (SQL and PLSQL)
   - MySQL Shell for VS Code
   - SuiteCloud Extension for Visual Studio Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Google
+  partner: google
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Google
+  partner_url: https://www.google.com/
+  partner_domain: google.com
+  listing_count: 10
+  apps:
+  - Gemini Code Assist
+  - Gemini CLI Companion
+  - Google Antigravity
+  - Colab
+  - ARB Editor
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
@@ -494,6 +540,27 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
+- partner_name: Google Cloud
+  partner: google
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/GoogleCloudTools
+  partner_url: https://google.com
+  partner_domain: google.com
+  listing_count: 3
+  apps:
+  - Google Cloud Code
+  - Google Cloud Data Agent Kit
+  - Firebase SQL Connect
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
 - partner_name: Snyk
   partner: snyk
   partner_match: domain+name-among-holders
@@ -594,6 +661,27 @@ edges:
   - Jsonnet Language Server
   - Grafana Alloy
   - Grafana
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: JetBrains
+  partner: jetbrains
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/JetBrains
+  partner_url: https://www.jetbrains.com
+  partner_domain: jetbrains.com
+  listing_count: 3
+  apps:
+  - C# by ReSharper
+  - Kotlin by JetBrains
+  - AI Assistant by JetBrains
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
@@ -1107,6 +1195,25 @@ edges:
   listing_count: 1
   apps:
   - GitLab
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Atlassian
+  partner: atlassian
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Atlassian
+  partner_url: https://www.atlassian.com
+  partner_domain: atlassian.com
+  listing_count: 1
+  apps:
+  - 'Atlassian: Jira, Rovo Dev, Bitbucket'
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
