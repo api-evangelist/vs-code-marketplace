@@ -44,75 +44,6 @@ paths:
                 $ref: '#/components/schemas/ExtensionQueryResponse'
 components:
   schemas:
-    ExtensionQueryResponse:
-      type: object
-      properties:
-        results:
-          type: array
-          items:
-            type: object
-            properties:
-              extensions:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Extension'
-              pagingToken:
-                type: string
-              resultMetadata:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    metadataType:
-                      type: string
-                    metadataItems:
-                      type: array
-                      items:
-                        type: object
-                        properties:
-                          name:
-                            type: string
-                          count:
-                            type: integer
-    FilterCriteria:
-      type: object
-      required:
-      - filterType
-      - value
-      properties:
-        filterType:
-          type: integer
-          description: The type of filter to apply. 1=Tag, 4=ExtensionId, 5=Category, 7=ExtensionName (publisher.name), 8=Target (VSCode), 10=FullText, 12=ExcludeWithFlags.
-          example: 10
-        value:
-          type: string
-          description: The filter value to match.
-          example: python
-    QueryFilter:
-      type: object
-      properties:
-        criteria:
-          type: array
-          description: Filter criteria items.
-          items:
-            $ref: '#/components/schemas/FilterCriteria'
-        pageNumber:
-          type: integer
-          default: 1
-          description: Page number for pagination.
-        pageSize:
-          type: integer
-          default: 10
-          maximum: 100
-          description: Number of results per page.
-        sortBy:
-          type: integer
-          description: Sort order field. 0=Default, 1=NoneOrRelevance, 4=Downloads, 5=Rating, 6=PublishedDate, 12=InstallCount.
-          default: 0
-        sortOrder:
-          type: integer
-          description: Sort direction. 0=Default, 1=Ascending, 2=Descending.
-          default: 0
     ExtensionStatistic:
       type: object
       properties:
@@ -190,40 +121,6 @@ components:
         ratingCount:
           type: integer
           description: Number of ratings submitted.
-    ExtensionQueryRequest:
-      type: object
-      properties:
-        filters:
-          type: array
-          description: Array of filter criteria to apply to the query.
-          items:
-            $ref: '#/components/schemas/QueryFilter'
-        assetTypes:
-          type: array
-          description: Specific asset types to include in the response.
-          items:
-            type: string
-            enum:
-            - Microsoft.VisualStudio.Services.VSIXPackage
-            - Microsoft.VisualStudio.Services.Icons.Default
-            - Microsoft.VisualStudio.Services.Icons.Small
-            - Microsoft.VisualStudio.Services.Content.Details
-            - Microsoft.VisualStudio.Services.Content.Changelog
-            - Microsoft.VisualStudio.Services.Content.License
-        flags:
-          type: integer
-          description: 'Bitmask of ExtensionQueryFlags controlling response detail level. Common values: 16863 (AllAttributes), 914 (basic details), 7 (minimal).'
-          example: 16863
-      example:
-        filters:
-        - criteria:
-          - filterType: 10
-            value: python
-          pageNumber: 1
-          pageSize: 10
-          sortBy: 4
-          sortOrder: 0
-        flags: 16863
     ExtensionVersion:
       type: object
       properties:
@@ -285,3 +182,106 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Extension'
+    QueryFilter:
+      type: object
+      properties:
+        criteria:
+          type: array
+          description: Filter criteria items.
+          items:
+            $ref: '#/components/schemas/FilterCriteria'
+        pageNumber:
+          type: integer
+          default: 1
+          description: Page number for pagination.
+        pageSize:
+          type: integer
+          default: 10
+          maximum: 100
+          description: Number of results per page.
+        sortBy:
+          type: integer
+          description: Sort order field. 0=Default, 1=NoneOrRelevance, 4=Downloads, 5=Rating, 6=PublishedDate, 12=InstallCount.
+          default: 0
+        sortOrder:
+          type: integer
+          description: Sort direction. 0=Default, 1=Ascending, 2=Descending.
+          default: 0
+    ExtensionQueryResponse:
+      type: object
+      properties:
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              extensions:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Extension'
+              pagingToken:
+                type: string
+              resultMetadata:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    metadataType:
+                      type: string
+                    metadataItems:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          name:
+                            type: string
+                          count:
+                            type: integer
+    FilterCriteria:
+      type: object
+      required:
+      - filterType
+      - value
+      properties:
+        filterType:
+          type: integer
+          description: The type of filter to apply. 1=Tag, 4=ExtensionId, 5=Category, 7=ExtensionName (publisher.name), 8=Target (VSCode), 10=FullText, 12=ExcludeWithFlags.
+          example: 10
+        value:
+          type: string
+          description: The filter value to match.
+          example: python
+    ExtensionQueryRequest:
+      type: object
+      properties:
+        filters:
+          type: array
+          description: Array of filter criteria to apply to the query.
+          items:
+            $ref: '#/components/schemas/QueryFilter'
+        assetTypes:
+          type: array
+          description: Specific asset types to include in the response.
+          items:
+            type: string
+            enum:
+            - Microsoft.VisualStudio.Services.VSIXPackage
+            - Microsoft.VisualStudio.Services.Icons.Default
+            - Microsoft.VisualStudio.Services.Icons.Small
+            - Microsoft.VisualStudio.Services.Content.Details
+            - Microsoft.VisualStudio.Services.Content.Changelog
+            - Microsoft.VisualStudio.Services.Content.License
+        flags:
+          type: integer
+          description: 'Bitmask of ExtensionQueryFlags controlling response detail level. Common values: 16863 (AllAttributes), 914 (basic details), 7 (minimal).'
+          example: 16863
+      example:
+        filters:
+        - criteria:
+          - filterType: 10
+            value: python
+          pageNumber: 1
+          pageSize: 10
+          sortBy: 4
+          sortOrder: 0
+        flags: 16863
