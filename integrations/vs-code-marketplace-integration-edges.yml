@@ -7,13 +7,13 @@ marketplace_apps:
   channel: partner-built
   app: vscode
   url: https://marketplace.visualstudio.com/vscode
-  app_count: 152618
+  app_count: 153526
   adapter: sweep-devtools.py:vscode
   listed: 10000
   filter: top 10000 by installs
-  dropped_by_cap: 142618
-  publishers: 7655
-  publishers_linked: 126
+  dropped_by_cap: 143526
+  publishers: 7654
+  publishers_linked: 129
   publishers_platform: 81
   listings_partner_built: 9689
   listings_platform_built: 311
@@ -475,6 +475,28 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
+- partner_name: JetBrains
+  partner: jetbrains
+  partner_match: domain+name-among-holders
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/JetBrains
+  partner_url: https://www.jetbrains.com
+  partner_domain: jetbrains.com
+  listing_count: 4
+  apps:
+  - C# by ReSharper
+  - Kotlin by JetBrains
+  - AI Assistant by JetBrains
+  - Java and Kotlin by IntelliJ IDEA
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
 - partner_name: Ember Tooling
   partner: ember
   partner_match: domain
@@ -661,27 +683,6 @@ edges:
   - Jsonnet Language Server
   - Grafana Alloy
   - Grafana
-  detected_by: sweep-devtools.py
-  detected: '2026-10-14'
-  badges:
-  - Verified publisher
-  - Verified domain
-- partner_name: JetBrains
-  partner: jetbrains
-  partner_match: domain+name-among-holders
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  relationship: platform-app
-  direction: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/JetBrains
-  partner_url: https://www.jetbrains.com
-  partner_domain: jetbrains.com
-  listing_count: 3
-  apps:
-  - C# by ReSharper
-  - Kotlin by JetBrains
-  - AI Assistant by JetBrains
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
@@ -888,6 +889,26 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
+- partner_name: MathWorks
+  partner: matlab
+  partner_match: domain+verified
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/MathWorks
+  partner_url: https://www.mathworks.com
+  partner_domain: mathworks.com
+  listing_count: 2
+  apps:
+  - MATLAB
+  - Polyspace as You Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-19'
+  badges:
+  - Verified publisher
+  - Verified domain
 - partner_name: Robocorp
   partner: robocorp
   partner_match: domain
@@ -945,6 +966,26 @@ edges:
   - postgres-language-server
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Okteto
+  partner: okteto
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/okteto
+  partner_url: https://okteto.com
+  partner_domain: okteto.com
+  listing_count: 2
+  apps:
+  - Remote - Kubernetes
+  - Kubernetes Context
+  detected_by: sweep-devtools.py
+  detected: '2026-10-19'
   badges:
   - Verified publisher
   - Verified domain
@@ -1486,6 +1527,25 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
+- partner_name: Ollama
+  partner: ollama
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Ollama
+  partner_url: https://ollama.com
+  partner_domain: ollama.com
+  listing_count: 1
+  apps:
+  - Ollama
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
 - partner_name: Apache Software Foundation
   partner: apache-software-foundation
   partner_match: domain+name-among-holders
@@ -1524,20 +1584,20 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
-- partner_name: Ollama
-  partner: ollama
+- partner_name: Bruno
+  partner: bruno-api
   partner_match: domain
   type: marketplace
   marketplace: own
   channel: partner-built
   relationship: platform-app
   direction: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/Ollama
-  partner_url: https://ollama.com
-  partner_domain: ollama.com
+  evidence: https://marketplace.visualstudio.com/publishers/bruno-api-client
+  partner_url: https://www.usebruno.com
+  partner_domain: usebruno.com
   listing_count: 1
   apps:
-  - Ollama
+  - Bruno
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
@@ -1557,25 +1617,6 @@ edges:
   listing_count: 1
   apps:
   - Application Wizard
-  detected_by: sweep-devtools.py
-  detected: '2026-10-14'
-  badges:
-  - Verified publisher
-  - Verified domain
-- partner_name: Bruno
-  partner: bruno-api
-  partner_match: domain
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  relationship: platform-app
-  direction: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/bruno-api-client
-  partner_url: https://www.usebruno.com
-  partner_domain: usebruno.com
-  listing_count: 1
-  apps:
-  - Bruno
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
@@ -2018,25 +2059,6 @@ edges:
   badges:
   - Verified publisher
   - Verified domain
-- partner_name: Neo4j
-  partner: neo4j
-  partner_match: domain
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  relationship: platform-app
-  direction: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/neo4j-extensions
-  partner_url: https://neo4j.com/
-  partner_domain: neo4j.com
-  listing_count: 1
-  apps:
-  - Neo4j for VS Code
-  detected_by: sweep-devtools.py
-  detected: '2026-10-14'
-  badges:
-  - Verified publisher
-  - Verified domain
 - partner_name: 'Wiz '
   partner: wiz
   partner_match: domain
@@ -2051,6 +2073,25 @@ edges:
   listing_count: 1
   apps:
   - Wiz Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Neo4j
+  partner: neo4j
+  partner_match: domain
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/neo4j-extensions
+  partner_url: https://neo4j.com/
+  partner_domain: neo4j.com
+  listing_count: 1
+  apps:
+  - Neo4j for VS Code
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
   badges:
@@ -2205,6 +2246,25 @@ edges:
   - 'Swimm: Application Understanding Platform'
   detected_by: sweep-devtools.py
   detected: '2026-10-14'
+  badges:
+  - Verified publisher
+  - Verified domain
+- partner_name: Silicon Labs
+  partner: silabs
+  partner_match: domain+verified
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SiLabs
+  partner_url: https://www.silabs.com/
+  partner_domain: silabs.com
+  listing_count: 1
+  apps:
+  - Simplicity Studio for VS Code
+  detected_by: sweep-devtools.py
+  detected: '2026-10-19'
   badges:
   - Verified publisher
   - Verified domain

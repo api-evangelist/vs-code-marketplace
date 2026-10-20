@@ -242,6 +242,18 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vs-code-marketplace-jetbrains
+  label: JetBrains
+  partner: jetbrains
+  partner_name: JetBrains
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/JetBrains
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: vs-code-marketplace-ember-tooling
   label: Ember Tooling
   partner: ember
@@ -346,18 +358,6 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/Grafana
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
-- slug: vs-code-marketplace-jetbrains
-  label: JetBrains
-  partner: jetbrains
-  partner_name: JetBrains
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/JetBrains
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -482,6 +482,18 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vs-code-marketplace-mathworks
+  label: MathWorks
+  partner: matlab
+  partner_name: MathWorks
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/MathWorks
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: vs-code-marketplace-robocorp
   label: Robocorp
   partner: robocorp
@@ -514,6 +526,18 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/Supabase
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-okteto
+  label: Okteto
+  partner: okteto
+  partner_name: Okteto
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/okteto
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -854,6 +878,18 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vs-code-marketplace-ollama
+  label: Ollama
+  partner: ollama
+  partner_name: Ollama
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Ollama
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
 - slug: vs-code-marketplace-apache-software-foundation
   label: Apache Software Foundation
   partner: apache-software-foundation
@@ -878,14 +914,14 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: vs-code-marketplace-ollama
-  label: Ollama
-  partner: ollama
-  partner_name: Ollama
+- slug: vs-code-marketplace-bruno
+  label: Bruno
+  partner: bruno-api
+  partner_name: Bruno
   type: marketplace
   marketplace: own
   channel: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/Ollama
+  evidence: https://marketplace.visualstudio.com/publishers/bruno-api-client
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -898,18 +934,6 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/SAPOS
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
-- slug: vs-code-marketplace-bruno
-  label: Bruno
-  partner: bruno-api
-  partner_name: Bruno
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/bruno-api-client
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -1190,18 +1214,6 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: vs-code-marketplace-neo4j
-  label: Neo4j
-  partner: neo4j
-  partner_name: Neo4j
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://marketplace.visualstudio.com/publishers/neo4j-extensions
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: vs-code-marketplace-wiz
   label: 'Wiz '
   partner: wiz
@@ -1210,6 +1222,18 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/WizCloud
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-neo4j
+  label: Neo4j
+  partner: neo4j
+  partner_name: Neo4j
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/neo4j-extensions
   source: edge
   relationship: platform-app
   status: not-a-workflow
@@ -1306,6 +1330,18 @@
   marketplace: own
   channel: partner-built
   evidence: https://marketplace.visualstudio.com/publishers/Swimm
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-silicon-labs
+  label: Silicon Labs
+  partner: silabs
+  partner_name: Silicon Labs
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SiLabs
   source: edge
   relationship: platform-app
   status: not-a-workflow
