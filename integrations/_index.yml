@@ -1562,3 +1562,1178 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vs-code-marketplace-ab-tasty
+  label: AB Tasty
+  partner: ab-tasty
+  partner_name: AB Tasty
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ABTasty
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: AB Tasty
+    publisher_id: ABTasty
+    matched_domain: abtasty.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-amazon
+  label: Amazon
+  partner: amazon
+  partner_name: Amazon
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/amazon-devices
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Amazon Devices
+    publisher_id: amazon-devices
+    matched_domain: amazon.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-archbee
+  label: Archbee
+  partner: archbee
+  partner_name: Archbee
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/archbee
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Archbee
+    publisher_id: archbee
+    matched_domain: archbee.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-augment-code
+  label: Augment Code
+  partner: augment-code
+  partner_name: Augment Code
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/augment
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Augment Computing
+    publisher_id: augment
+    matched_domain: augmentcode.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-bazel
+  label: Bazel
+  partner: bazel-build
+  partner_name: Bazel
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/BazelBuild
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: The Bazel Team
+    publisher_id: BazelBuild
+    matched_domain: bazel.build
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-centml
+  label: CentML
+  partner: centml
+  partner_name: CentML
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/CentML
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: CentML
+    publisher_id: CentML
+    matched_domain: centml.ai
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-cerebras-systems
+  label: Cerebras Systems
+  partner: cerebras-systems
+  partner_name: Cerebras Systems
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/cerebras
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Cerebras
+    publisher_id: cerebras
+    matched_domain: cerebras.ai
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-chia-network
+  label: Chia Network
+  partner: chia-network
+  partner_name: Chia Network
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ChiaNetwork
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Chia Network Inc.
+    publisher_id: ChiaNetwork
+    matched_domain: chia.net
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-cloudsmith
+  label: Cloudsmith
+  partner: cloudsmith
+  partner_name: Cloudsmith
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Cloudsmith
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Cloudsmith
+    publisher_id: Cloudsmith
+    matched_domain: cloudsmith.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-codesecure
+  label: CodeSecure
+  partner: codesecure
+  partner_name: CodeSecure
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/CodeSecure
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: CodeSecure
+    publisher_id: CodeSecure
+    matched_domain: codesecure.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-contrast-security
+  label: Contrast Security
+  partner: contrast-security
+  partner_name: Contrast Security
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ContrastSecurityIDE
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Contrast-Security
+    publisher_id: ContrastSecurityIDE
+    matched_domain: contrastsecurity.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-couchbase
+  label: Couchbase
+  partner: couchbase
+  partner_name: Couchbase
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Couchbase
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Couchbase
+    publisher_id: Couchbase
+    matched_domain: couchbase.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-cycode
+  label: Cycode
+  partner: cycode
+  partner_name: Cycode
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/cycode
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: cycodehq
+    publisher_id: cycode
+    matched_domain: cycode.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-daytona
+  label: Daytona
+  partner: daytona-io
+  partner_name: Daytona
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/daytonaio
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Daytona
+    publisher_id: daytonaio
+    matched_domain: daytona.io
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-denodo
+  label: Denodo
+  partner: denodo
+  partner_name: Denodo
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/denodo
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Denodo Technologies
+    publisher_id: denodo
+    matched_domain: denodo.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-devcycle
+  label: DevCycle
+  partner: devcycle
+  partner_name: DevCycle
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/DevCycle
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: DevCycle
+    publisher_id: DevCycle
+    matched_domain: devcycle.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-dynatrace
+  label: Dynatrace
+  partner: dynatrace
+  partner_name: Dynatrace
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/dynatrace
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Dynatrace
+    publisher_id: dynatrace
+    matched_domain: dynatrace.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-fusio
+  label: Fusio
+  partner: fusio
+  partner_name: Fusio
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Fusio
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Fusio
+    publisher_id: Fusio
+    matched_domain: fusio-project.org
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-harness
+  label: Harness
+  partner: harness
+  partner_name: Harness
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/harness-inc
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Harness Inc.
+    publisher_id: harness-inc
+    matched_domain: harness.io
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-ifs
+  label: IFS
+  partner: ifs
+  partner_name: IFS
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/IFS
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: IFS
+    publisher_id: IFS
+    matched_domain: ifs.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-imandra
+  label: Imandra
+  partner: imandra
+  partner_name: Imandra
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/imandra
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Imandra
+    publisher_id: imandra
+    matched_domain: imandra.ai
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-kestra
+  label: Kestra
+  partner: kestra
+  partner_name: Kestra
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/kestra-io
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Kestra
+    publisher_id: kestra-io
+    matched_domain: kestra.io
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-kodem
+  label: Kodem
+  partner: kodem
+  partner_name: Kodem
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/KodemSecurity
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Kodem Security
+    publisher_id: KodemSecurity
+    matched_domain: kodemsecurity.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-ledger
+  label: Ledger
+  partner: ledger
+  partner_name: Ledger
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/LedgerHQ
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Ledger
+    publisher_id: LedgerHQ
+    matched_domain: ledger.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-lseg
+  label: LSEG
+  partner: lseg
+  partner_name: LSEG
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/lseg
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: LSEG
+    publisher_id: lseg
+    matched_domain: lseg.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-mips
+  label: Mips
+  partner: mips
+  partner_name: Mips
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/mips
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: mips
+    publisher_id: mips
+    matched_domain: mips.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-octopus-deploy
+  label: Octopus Deploy
+  partner: octopus-deploy
+  partner_name: Octopus Deploy
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/octopusdeploy
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Octopus Deploy
+    publisher_id: octopusdeploy
+    matched_domain: octopus.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-opsmill
+  label: OpsMill
+  partner: opsmill
+  partner_name: OpsMill
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/opsmill
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Opsmill
+    publisher_id: opsmill
+    matched_domain: opsmill.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-palo-alto-networks
+  label: Palo Alto Networks
+  partner: palo-alto-networks
+  partner_name: Palo Alto Networks
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/PrismaCloud
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Palo Alto Networks
+    publisher_id: PrismaCloud
+    matched_domain: paloaltonetworks.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-qwiet-ai
+  label: Qwiet Ai
+  partner: qwiet-ai
+  partner_name: Qwiet Ai
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ShiftLeft
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Qwiet AI
+    publisher_id: ShiftLeft
+    matched_domain: qwiet.ai
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-resend
+  label: Resend
+  partner: resend
+  partner_name: Resend
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/resend
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: resend
+    publisher_id: resend
+    matched_domain: resend.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-retool
+  label: Retool
+  partner: retool
+  partner_name: Retool
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Retool
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Retool
+    publisher_id: Retool
+    matched_domain: retool.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-salto
+  label: Salto
+  partner: salto
+  partner_name: Salto
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/salto-io
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Salto.io
+    publisher_id: salto-io
+    matched_domain: salto.io
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-sauce-labs
+  label: Sauce Labs
+  partner: sauce-labs
+  partner_name: Sauce Labs
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/saucelabs
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Sauce Labs
+    publisher_id: saucelabs
+    matched_domain: saucelabs.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-sifive
+  label: SiFive
+  partner: sifive
+  partner_name: SiFive
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/sifive
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: SiFive
+    publisher_id: sifive
+    matched_domain: sifive.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-sinch
+  label: Sinch
+  partner: sinch
+  partner_name: Sinch
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/Sinch
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Sinch
+    publisher_id: Sinch
+    matched_domain: sinch.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-sonatype
+  label: Sonatype
+  partner: sonatype
+  partner_name: Sonatype
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SonatypeIntegrations
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Sonatype
+    publisher_id: SonatypeIntegrations
+    matched_domain: sonatype.com
+    matched_by: domain+name-among-holders
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-speclynx
+  label: SpecLynx
+  partner: speclynx
+  partner_name: SpecLynx
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/SpecLynx
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: SpecLynx
+    publisher_id: SpecLynx
+    matched_domain: speclynx.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-surrealdb
+  label: SurrealDB
+  partner: surrealdb
+  partner_name: SurrealDB
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/surrealdb
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: SurrealDB
+    publisher_id: surrealdb
+    matched_domain: surrealdb.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-teradata
+  label: Teradata
+  partner: teradata
+  partner_name: Teradata
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/TeradataCorporation
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Teradata
+    publisher_id: TeradataCorporation
+    matched_domain: teradata.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-thunder-compute
+  label: Thunder Compute
+  partner: thundercompute
+  partner_name: Thunder Compute
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/ThunderCompute
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Thunder Compute
+    publisher_id: ThunderCompute
+    matched_domain: thundercompute.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-tla-plus-foundation
+  label: TLA Plus Foundation
+  partner: tla-plus-foundation
+  partner_name: TLA Plus Foundation
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/tlaplus
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: TLA+ Foundation
+    publisher_id: tlaplus
+    matched_domain: tlapl.us
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-uipath
+  label: UiPath
+  partner: uipath
+  partner_name: UiPath
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/uipath
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: UiPath
+    publisher_id: uipath
+    matched_domain: uipath.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-unblocked
+  label: Unblocked
+  partner: unblocked
+  partner_name: Unblocked
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/nextchaptersoftware
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Unblocked
+    publisher_id: nextchaptersoftware
+    matched_domain: getunblocked.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-wherobots
+  label: Wherobots
+  partner: wherobots
+  partner_name: Wherobots
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/wherobots
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Wherobots
+    publisher_id: wherobots
+    matched_domain: wherobots.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-xano
+  label: Xano
+  partner: xano
+  partner_name: Xano
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/xano
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: xano
+    publisher_id: xano
+    matched_domain: xano.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
+- slug: vs-code-marketplace-zyte
+  label: Zyte
+  partner: zyte
+  partner_name: Zyte
+  category: IDE / developer extension marketplace listing
+  type: marketplace
+  marketplace: vs-code-marketplace
+  channel: partner-built
+  evidence: https://marketplace.visualstudio.com/publishers/zyte
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Visual Studio Code Marketplace
+    spec_file: null
+    role: vs-code-marketplace-publisher
+    registered_name: Zyte
+    publisher_id: zyte
+    matched_domain: zyte.com
+    matched_by: domain
+    detected_by: sweep-ide-extension-marketplaces.py
+    detected: '2026-10-20'
+    signal_note: one edge per (provider, store); listing alone = participation. Listing / install / download counts
+      are context, never counted. Publisher vetting badges -> publisher_verified (weight 0)
+  status: not-a-workflow
+  arazzo: null
