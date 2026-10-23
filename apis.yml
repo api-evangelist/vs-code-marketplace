@@ -104,6 +104,8 @@ tags:
 type: Index
 access: 3rd-Party
 common:
+  - type: PostmanWorkspace
+    url: https://www.postman.com/kinlaneapi/vs-code-marketplace/overview
   - type: Plans
     url: plans/vs-code-marketplace-plans-pricing.yml
   - type: RateLimits
